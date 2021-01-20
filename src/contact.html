@@ -1,86 +1,66 @@
-{% extends 'src/includes/base.html' %}
-
-{% block content %}
+{% extends 'src/includes/base.html' %} {% block content %}
 <!-- Content -->
 <div class="squish-center-container">
-	<div class="flex flex-row w-full gap-x-4">
+	<div
+		class="w-full grid grid-cols-2 grid-rows-2 gap-x-4"
+		style="grid-template-columns: 1fr 2fr; grid-template-rows: auto auto;"
+	>
 		<!-- Gondwana Animation -->
-		<div
-			class="flex flex-col flex-grow card"
-			style="height: 30rem;"
-		>
+		<div class="flex flex-col row-span-2 card gap-y-2">
 			<div
 				class="w-full text-xl font-bold seperator-down header"
 			>
-				Gondwana
+				Contact
 			</div>
-			<div
-				class="flex-grow bg-right-bottom bg-no-repeat bg-contain"
-				style="background-image: url('assets/img/animation.gif');"
-			></div>
+			<div>
+				<img
+					src="/assets/img/langegeer.jpg"
+					class="w-full"
+				/>
+			</div>
+			<div>
+				<img
+					src="/assets/img/office.jpg"
+					class="w-full"
+				/>
+			</div>
 		</div>
 
-		<div class="flex flex-col gap-y-4 w-80">
-			<!-- About -->
-			<div class="card">
-				<div
-					class="w-full text-xl seperator-down header"
-				>
-					About
-					<b>
-						Colin Reeves
-					</b>
+		<div class="card content">
+			<div class="grid grid-cols-2 gap-y-2 gap-x-2">
+				<div class="italic">
+					Postal Address:
 				</div>
-				<div
-					class="flex flex-row items-center content-center pt-4 space-x-4"
-				>
-					<div>
-						<img
-							src="assets/img/smallmugshot.jpg"
-							class="w-64"
-							alt="Colin Reeves"
-						/>
-					</div>
-					<div class="self-start content">
-						<div>
-							Colin Reeves is an earth
-							scientist with 40 years’
-							experience in the
-							instigation, execution
-							and interpretation of
-							regio...
-						</div>
-						<div class="ref">
-							READ MORE...
-						</div>
-					</div>
+				<div>
+					Achterom 41a<br />
+					2611 PL Delft<br />
+					The Netherlands
 				</div>
-			</div>
-
-			<!-- Newest Update -->
-			<div class="p-4 bg-white shadow-sm">
-				<div
-					class="w-full text-xl font-bold seperator-down header"
-				>
-					Newest Update
+				<div class="italic">
+					Visiting Address:
 				</div>
-				<div class="py-4 content">
-					Justo mauris lorem metus vulputate in
-					nam ad aptent, eros class ut
-					sollicitudin nibh ornare diam, curae
-					ridiculus dis sodales tristique finibus
-					at. Litora etiam leo aptent eros
-					placerat lacus cursus senectus aliquet
-					feugiat taciti nibh, elementum potenti
-					mus viverra posuere metus dictum
-					condimentum quam lobortis finibus
-					ornare, sodales mauris magnis efficitur
-					lacinia cras felis quis ex dignissim
-					class. Auctor litora felis luctus nunc
-					ac erat natoque morbi fermentum.
+				<div>
+					Lange Geer 44<br />
+					2611 PW Delft<br />
+					The Netherlands
 				</div>
-				<div class="ref">
-					READ MORE...
+				<div class="italic">
+					Mobile phone:
+				</div>
+				<div>
+					+31 611 35 62 72
+				</div>
+				<div class="italic">
+					E-mail:
+				</div>
+				<div>
+					reeves.earth@planet.nl
+				</div>
+				<div class="italic">
+					Website:
+				</div>
+				<div>
+					<a href="/">www.reeves.nl</a>
 				</div>
 			</div>
 		</div>

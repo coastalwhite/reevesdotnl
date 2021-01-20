@@ -1,85 +1,91 @@
-{% extends 'src/includes/base.html' %}
-
-{% block content %}
+{% extends 'src/includes/base.html' %} {% block content %}
 <!-- Content -->
 <div class="squish-center-container">
 	<div class="flex flex-row w-full gap-x-4">
 		<!-- Gondwana Animation -->
-		<div
-			class="flex flex-col flex-grow card"
-			style="height: 30rem;"
-		>
+		<div class="flex flex-col card gap-y-4" style="height: 35rem;">
 			<div
 				class="w-full text-xl font-bold seperator-down header"
 			>
-				Gondwana
+				About
 			</div>
-			<div
-				class="flex-grow bg-right-bottom bg-no-repeat bg-contain"
-				style="background-image: url('assets/img/animation.gif');"
-			></div>
+			<div class="flex-grow">
+				<img
+					src="/assets/img/personal.jpg"
+					class="w-full"
+				/>
+			</div>
+			<div class="flex-grow">
+				<img
+					src="/assets/img/magnetic-anomalies.bmp"
+					class="w-full"
+				/>
+			</div>
 		</div>
 
-		<div class="flex flex-col gap-y-4 w-80">
-			<!-- About -->
-			<div class="card">
-				<div
-					class="w-full text-xl seperator-down header"
-				>
-					About
-					<b>
-						Colin Reeves
-					</b>
-				</div>
-				<div
-					class="flex flex-row items-center content-center pt-4 space-x-4"
-				>
-					<div>
-						<img
-							src="assets/img/smallmugshot.jpg"
-							class="w-64"
-							alt="Colin Reeves"
-						/>
-					</div>
-					<div class="self-start content">
-						<div>
-							Colin Reeves is an earth
-							scientist with 40 years’
-							experience in the
-							instigation, execution
-							and interpretation of
-							regio...
-						</div>
-						<div class="ref">
-							READ MORE...
-						</div>
-					</div>
+		<div class="flex flex-col flex-grow max-w-xl gap-y-4">
+			<div class="card content">
+				<b class="header">Colin Reeves</b> has had an
+				career in Nisl nec himenaeos lacinia massa class
+				odio pharetra, convallis litora luctus nunc dui
+				fringilla arcu duis, nullam mattis cursus
+				rhoncus accumsan ac. Quam neque ullamcorper
+				torquent taciti turpis a leo elit iaculis, et
+				lorem aptent aenean faucibus cubilia senectus
+				metus, magna est eu morbi lacinia tortor feugiat
+				imperdiet. Velit tellus nisi hac magnis
+				vulputate sagittis ut aliquet montes, ultrices
+				turpis tristique senectus nisl mi mus fames ad,
+				convallis sociosqu ligula adipiscing maximus
+				consequat dis purus. Tincidunt senectus
+				pellentesque augue placerat vestibulum molestie
+				bibendum ut elit, odio primis at id facilisis
+				fringilla malesuada dis, eros viverra potenti
+				lobortis ultricies sed felis ornare. Penatibus
+				quam tellus parturient vulputate varius tempor
+				maecenas bibendum, dictumst ultricies habitant
+				massa primis eget id mi curae, condimentum
+				euismod lacinia mauris metus ridiculus torquent.
+				Vehicula sodales eleifend eu dis dictum lectus,
+				vivamus egestas ipsum tempor urna. Rutrum diam
+				vitae vehicula finibus mollis vel habitant erat
+				dapibus dolor nullam quam quis mauris pharetra,
+				placerat scelerisque cubilia arcu leo pulvinar
+				morbi interdum mi dis venenatis platea sodales.
+				<div class="float-right mt-4 ref">
+					READ MORE...
 				</div>
 			</div>
 
-			<!-- Newest Update -->
-			<div class="p-4 bg-white shadow-sm">
-				<div
-					class="w-full text-xl font-bold seperator-down header"
-				>
-					Newest Update
-				</div>
-				<div class="py-4 content">
-					Justo mauris lorem metus vulputate in
-					nam ad aptent, eros class ut
-					sollicitudin nibh ornare diam, curae
-					ridiculus dis sodales tristique finibus
-					at. Litora etiam leo aptent eros
-					placerat lacus cursus senectus aliquet
-					feugiat taciti nibh, elementum potenti
-					mus viverra posuere metus dictum
-					condimentum quam lobortis finibus
-					ornare, sodales mauris magnis efficitur
-					lacinia cras felis quis ex dignissim
-					class. Auctor litora felis luctus nunc
-					ac erat natoque morbi fermentum.
-				</div>
-				<div class="ref">
+			<div class="card content">
+				<b class="header">Earthworks</b> was founding in
+				Nisl nec himenaeos lacinia massa class odio
+				pharetra, convallis litora luctus nunc dui
+				fringilla arcu duis, nullam mattis cursus
+				rhoncus accumsan ac. Quam neque ullamcorper
+				torquent taciti turpis a leo elit iaculis, et
+				lorem aptent aenean faucibus cubilia senectus
+				metus, magna est eu morbi lacinia tortor feugiat
+				imperdiet. Velit tellus nisi hac magnis
+				vulputate sagittis ut aliquet montes, ultrices
+				turpis tristique senectus nisl mi mus fames ad,
+				convallis sociosqu ligula adipiscing maximus
+				consequat dis purus. Tincidunt senectus
+				pellentesque augue placerat vestibulum molestie
+				bibendum ut elit, odio primis at id facilisis
+				fringilla malesuada dis, eros viverra potenti
+				lobortis ultricies sed felis ornare. Penatibus
+				quam tellus parturient vulputate varius tempor
+				maecenas bibendum, dictumst ultricies habitant
+				massa primis eget id mi curae, condimentum
+				euismod lacinia mauris metus ridiculus torquent.
+				Vehicula sodales eleifend eu dis dictum lectus,
+				vivamus egestas ipsum tempor urna. Rutrum diam
+				vitae vehicula finibus mollis vel habitant erat
+				dapibus dolor nullam quam quis mauris pharetra,
+				placerat scelerisque cubilia arcu leo pulvinar
+				morbi interdum mi dis venenatis platea sodales.
+				<div class="float-right mt-4 ref">
 					READ MORE...
 				</div>
 			</div>
