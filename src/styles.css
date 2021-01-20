@@ -45,5 +45,53 @@
 			@apply p-4;
 			@apply menu-card;
 		}
+
+		.grid-1\/2 {
+			@apply grid-cols-2;
+			@apply grid-rows-2;
+			@apply grid;
+			grid-template-rows: auto auto;
+			grid-template-columns: 1fr 2fr;
+		}
+
+		.grid-2\/1 {
+			@apply grid-cols-2;
+			@apply grid-rows-2;
+			@apply grid;
+			grid-template-rows: auto auto;
+			grid-template-columns: 2fr 1fr;
+		}
+
+		.grid-1\/3 {
+			@apply grid-cols-2;
+			@apply grid-rows-2;
+			@apply grid;
+			grid-template-rows: auto auto;
+			grid-template-columns: 1fr 3fr;
+		}
+
+		.grid-3\/1 {
+			@apply grid-cols-2;
+			@apply grid-rows-2;
+			@apply grid;
+			grid-template-rows: auto auto;
+			grid-template-columns: 3fr 1fr;
+		}
+
+		.grid-1\/4 {
+			@apply grid-cols-2;
+			@apply grid-rows-2;
+			@apply grid;
+			grid-template-rows: auto auto;
+			grid-template-columns: 1fr 4fr;
+		}
+
+		.grid-2\/5 {
+			@apply grid-cols-2;
+			@apply grid-rows-2;
+			@apply grid;
+			grid-template-rows: auto auto;
+			grid-template-columns: 2fr 5fr;
+		}
 	}
 }
