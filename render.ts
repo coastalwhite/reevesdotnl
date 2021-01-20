@@ -1,18 +1,18 @@
-// @deno-types="https://deno.land/x/denjucks/mod.d.ts"
-import denjucks from "https://deno.land/x/denjucks/mod.js";
+// @deno-types="https://deno.land/x/bq_denjucks/mod.d.ts"
+import denjucks from "https://deno.land/x/bq_denjucks/mod.js";
 
 const exportFiles = [
-	"index.html",
-	"gondwana.html",
-	"news.html",
-	"publications.html",
-	"about.html",
-	"contact.html",
+	{ fileName: "index.html", data: { home: true } },
+	{ fileName: "gondwana.html", data: { gondwana: true } },
+	{ fileName: "news.html", data: { news: true } },
+	{ fileName: "publications.html", data: { publications: true } },
+	{ fileName: "about.html", data: { about: true } },
+	{ fileName: "contact.html", data: { contact: true } },
 ];
 
-exportFiles.forEach((fileName) => {
+exportFiles.forEach(({ fileName, data }) => {
 	console.log("Starting with %s", fileName);
-	const compiledHTML = denjucks.render("./src/" + fileName, {});
+	const compiledHTML = denjucks.render("./src/" + fileName, data);
 	console.log("Compiled %s into HTML", fileName);
 	const fileWrite = Deno.writeTextFile("./" + fileName, compiledHTML);
 	fileWrite

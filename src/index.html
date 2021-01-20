@@ -1,208 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>
-			Reeves / Earthworks - Global thinking in exporation
-			geoscience
-		</title>
-		<link rel="stylesheet" href="tailwind.css" />
-	</head>
-	<body>
-		<div class="min-h-screen pb-8 bg-bgcolor">
-			<!-- Navbar -->
-			<div class="pb-4">
-				<div class="max-w-screen menu-card">
-					<div class="squish-center-container">
-						<div>
-							<img
-								src="/assets/img/logo-earthworks.jpg"
-								alt="Logo Earthworks"
-							/>
-						</div>
-					</div>
+{% extends 'src/includes/base.html' %}
+
+{% block content %}
+<!-- Content -->
+<div class="squish-center-container">
+	<div class="flex flex-row w-full gap-x-4">
+		<!-- Gondwana Animation -->
+		<div
+			class="flex flex-col flex-grow card"
+			style="height: 30rem;"
+		>
+			<div
+				class="w-full text-xl font-bold seperator-down header"
+			>
+				Gondwana
+			</div>
+			<div
+				class="flex-grow bg-right-bottom bg-no-repeat bg-contain"
+				style="background-image: url('assets/img/animation.gif');"
+			></div>
+		</div>
+
+		<div class="flex flex-col gap-y-4 w-80">
+			<!-- About -->
+			<div class="card">
+				<div
+					class="w-full text-xl seperator-down header"
+				>
+					About
+					<b>
+						Colin Reeves
+					</b>
 				</div>
-				<div class="squish-center-container">
-					<div
-						class="flex flex-row justify-between font-header"
-					>
-						<div
-							class="font-bold text-center card"
-						>
-							<a href="/">Home</a>
+				<div
+					class="flex flex-row items-center content-center pt-4 space-x-4"
+				>
+					<div>
+						<img
+							src="assets/img/smallmugshot.jpg"
+							class="w-64"
+							alt="Colin Reeves"
+						/>
+					</div>
+					<div class="self-start content">
+						<div>
+							Colin Reeves is an earth
+							scientist with 40 years’
+							experience in the
+							instigation, execution
+							and interpretation of
+							regio...
 						</div>
-						<div
-							class="p-4 text-center hover:semibold"
-						>
-							<a href="/gondwana.html"
-								>Gondwana</a
-							>
-						</div>
-						<div
-							class="p-4 text-center hover:semibold"
-						>
-							<a href="/news.html"
-								>News</a
-							>
-						</div>
-						<div
-							class="p-4 text-center hover:semibold"
-						>
-							<a
-								href="/publications.html"
-								>Publications</a
-							>
-						</div>
-						<div
-							class="p-4 text-center hover:semibold"
-						>
-							<a href="/about.html"
-								>About</a
-							>
-						</div>
-						<div
-							class="p-4 text-center hover:semibold"
-						>
-							<a href="/contact.html"
-								>Contact</a
-							>
+						<div class="ref">
+							READ MORE...
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<!-- Content -->
-			<div class="squish-center-container">
-				<div class="flex flex-row w-full gap-x-4">
-					<!-- Gondwana Animation -->
-					<div
-						class="flex flex-col flex-grow card" style="height: 30rem;"
-					>
-						<div
-							class="w-full text-xl font-bold seperator-down header"
-						>
-							Gondwana
-						</div>
-						<div
-							class="flex-grow bg-right-bottom bg-no-repeat bg-contain"
-							style="background-image: url('assets/img/animation.gif');"
-						></div>
-					</div>
-
-					<div class="flex flex-col gap-y-4 w-80">
-						<!-- About -->
-						<div class="card">
-							<div
-								class="w-full text-xl seperator-down header"
-							>
-								About
-								<b>
-									Colin
-									Reeves
-								</b>
-							</div>
-							<div
-								class="flex flex-row items-center content-center pt-4 space-x-4"
-							>
-								<div>
-									<img
-										src="assets/img/smallmugshot.jpg"
-										class="w-64"
-										alt="Colin Reeves"
-									/>
-								</div>
-								<div
-									class="self-start content"
-								>
-									<div>
-										Colin
-										Reeves
-										is
-										an
-										earth
-										scientist
-										with
-										40
-										years’
-										experience
-										in
-										the
-										instigation,
-										execution
-										and
-										interpretation
-										of
-										regio...
-									</div>
-									<div
-										class="ref"
-									>
-										READ
-										MORE...
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Newest Update -->
-						<div
-							class="p-4 bg-white shadow-sm"
-						>
-							<div
-								class="w-full text-xl font-bold seperator-down header"
-							>
-								Newest Update
-							</div>
-							<div
-								class="py-4 content"
-							>
-								Justo mauris
-								lorem metus
-								vulputate in nam
-								ad aptent, eros
-								class ut
-								sollicitudin
-								nibh ornare
-								diam, curae
-								ridiculus dis
-								sodales
-								tristique
-								finibus at.
-								Litora etiam leo
-								aptent eros
-								placerat lacus
-								cursus senectus
-								aliquet feugiat
-								taciti nibh,
-								elementum
-								potenti mus
-								viverra posuere
-								metus dictum
-								condimentum quam
-								lobortis finibus
-								ornare, sodales
-								mauris magnis
-								efficitur
-								lacinia cras
-								felis quis ex
-								dignissim class.
-								Auctor litora
-								felis luctus
-								nunc ac erat
-								natoque morbi
-								fermentum.
-							</div>
-							<div class="ref">
-								READ MORE...
-							</div>
-						</div>
-					</div>
+			<!-- Newest Update -->
+			<div class="p-4 bg-white shadow-sm">
+				<div
+					class="w-full text-xl font-bold seperator-down header"
+				>
+					Newest Update
+				</div>
+				<div class="py-4 content">
+					Justo mauris lorem metus vulputate in
+					nam ad aptent, eros class ut
+					sollicitudin nibh ornare diam, curae
+					ridiculus dis sodales tristique finibus
+					at. Litora etiam leo aptent eros
+					placerat lacus cursus senectus aliquet
+					feugiat taciti nibh, elementum potenti
+					mus viverra posuere metus dictum
+					condimentum quam lobortis finibus
+					ornare, sodales mauris magnis efficitur
+					lacinia cras felis quis ex dignissim
+					class. Auctor litora felis luctus nunc
+					ac erat natoque morbi fermentum.
+				</div>
+				<div class="ref">
+					READ MORE...
 				</div>
 			</div>
 		</div>
-	</body>
-</html>
+	</div>
+	{% endblock %}
+</div>
