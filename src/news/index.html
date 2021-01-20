@@ -1,0 +1,32 @@
+{% extends 'src/includes/base.html' %} {% block content %}
+<!-- Content -->
+<div class="squish-center-container">
+	<div class="flex flex-row w-full gap-x-4">
+		<!-- Gondwana Animation -->
+		<div class="flex flex-col card gap-y-4" style="height: 40rem;">
+			<div
+				class="w-full text-xl font-bold seperator-down header"
+			>
+				News
+			</div>
+			<div class="flex-grow">
+				<img src="/assets/img/news.jpg" class="w-full" />
+			</div>
+			<div class="flex-grow">
+				<img
+					src="/assets/img/animation.gif"
+					class="w-full"
+				/>
+			</div>
+		</div>
+
+		<!-- News items -->
+		<div class="flex flex-col flex-grow gap-y-4">
+			{% include 'src/news/items/01_excerpt.html' %}
+			{% include 'src/news/items/01_excerpt.html' %}
+			{% include 'src/news/items/01_excerpt.html' %}
+			{% include 'src/news/items/01_excerpt.html' %}
+		</div>
+	</div>
+	{% endblock %}
+</div>

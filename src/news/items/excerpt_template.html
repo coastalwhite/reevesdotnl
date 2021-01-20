@@ -1,0 +1,13 @@
+<div class="card">
+	<div class="w-full text-xl seperator-down header">
+		{% block title %}{% endblock %}
+	</div>
+	<div class="pt-2 content">
+		{% block content %}{% endblock %}
+	</div>
+	<div class="float-right ref">
+		<a href="/news/items/{% block href %}{% endblock %}.html"
+			>READ MORE...</a
+		>
+	</div>
+</div>
