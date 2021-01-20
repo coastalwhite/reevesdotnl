@@ -1,6 +1,13 @@
-{% extends 'src/includes/base.html' %}
+{% extends 'src/includes/base.html' %} {% block content %}
 
-{% block content %}
+{% macro link(title, href) %}
+<div
+	class="py-2 header seperator-down hover:underline"
+>
+	<a class="text-xl text-refcolor" href="{{ href }}">{{ title }}</a>
+</div>
+{% endmacro %}
+
 <!-- Content -->
 <div class="squish-center-container">
 	<div class="flex flex-row w-full gap-x-4">
@@ -16,71 +23,39 @@
 			</div>
 			<div
 				class="flex-grow bg-right-bottom bg-no-repeat bg-contain"
-				style="background-image: url('assets/img/animation.gif');"
+				style="background-image: url('assets/img/gondwana.gif');"
 			></div>
 		</div>
 
 		<div class="flex flex-col gap-y-4 w-80">
-			<!-- About -->
+			<!-- Links -->
 			<div class="card">
 				<div
-					class="w-full text-xl seperator-down header"
+					class="w-full font-bold seperator-down header"
 				>
-					About
-					<b>
-						Colin Reeves
-					</b>
+					Links
 				</div>
-				<div
-					class="flex flex-row items-center content-center pt-4 space-x-4"
-				>
-					<div>
-						<img
-							src="assets/img/smallmugshot.jpg"
-							class="w-64"
-							alt="Colin Reeves"
-						/>
-					</div>
-					<div class="self-start content">
-						<div>
-							Colin Reeves is an earth
-							scientist with 40 years’
-							experience in the
-							instigation, execution
-							and interpretation of
-							regio...
-						</div>
-						<div class="ref">
-							READ MORE...
-						</div>
+				<div class="content">
+					Follow the links below to discover
+					everything from the basic principles of
+					global tectonics to the latest research
+					on the dispersal of Gondwana, complete
+					with animations. The work part of the
+					IGCP Project 628, the Geological Map of
+					Gondwana:
+					<div class="text-refcolor">
+						<a
+							href="http://www.gondwana.geologia.ufrj.br/en/"
+							>http://www.gondwana.geologia.ufrj.br/en/</a
+						>
 					</div>
 				</div>
-			</div>
-
-			<!-- Newest Update -->
-			<div class="p-4 bg-white shadow-sm">
-				<div
-					class="w-full text-xl font-bold seperator-down header"
-				>
-					Newest Update
-				</div>
-				<div class="py-4 content">
-					Justo mauris lorem metus vulputate in
-					nam ad aptent, eros class ut
-					sollicitudin nibh ornare diam, curae
-					ridiculus dis sodales tristique finibus
-					at. Litora etiam leo aptent eros
-					placerat lacus cursus senectus aliquet
-					feugiat taciti nibh, elementum potenti
-					mus viverra posuere metus dictum
-					condimentum quam lobortis finibus
-					ornare, sodales mauris magnis efficitur
-					lacinia cras felis quis ex dignissim
-					class. Auctor litora felis luctus nunc
-					ac erat natoque morbi fermentum.
-				</div>
-				<div class="ref">
-					READ MORE...
+				<div class="pt-2">
+					{{ link('Principles of global tectonics', '/') }}
+					{{ link('Selected animations', '/') }}
+					{{ link('Research updates', '/') }}
+					{{ link('Twelve lectures', '/') }}
+					{{ link('Other material', '/') }}
 				</div>
 			</div>
 		</div>

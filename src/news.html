@@ -1,86 +1,222 @@
-{% extends 'src/includes/base.html' %}
-
-{% block content %}
+{% extends 'src/includes/base.html' %} {% block content %}
 <!-- Content -->
 <div class="squish-center-container">
 	<div class="flex flex-row w-full gap-x-4">
 		<!-- Gondwana Animation -->
-		<div
-			class="flex flex-col flex-grow card"
-			style="height: 30rem;"
-		>
+		<div class="flex flex-col card gap-y-4" style="height: 40rem;">
 			<div
 				class="w-full text-xl font-bold seperator-down header"
 			>
-				Gondwana
+				News
 			</div>
-			<div
-				class="flex-grow bg-right-bottom bg-no-repeat bg-contain"
-				style="background-image: url('assets/img/animation.gif');"
-			></div>
+			<div class="flex-grow">
+				<img src="assets/img/news.jpg" class="w-full" />
+			</div>
+			<div class="flex-grow">
+				<img
+					src="assets/img/animation.gif"
+					class="w-full"
+				/>
+			</div>
 		</div>
 
-		<div class="flex flex-col gap-y-4 w-80">
-			<!-- About -->
+		<!-- News items -->
+		<div class="flex flex-col flex-grow gap-y-4">
+			<!-- News Items -->
 			<div class="card">
 				<div
 					class="w-full text-xl seperator-down header"
 				>
-					About
-					<b>
-						Colin Reeves
-					</b>
+					Morbi pulvinar inceptos class dis eros
+					interdum.
 				</div>
-				<div
-					class="flex flex-row items-center content-center pt-4 space-x-4"
-				>
-					<div>
-						<img
-							src="assets/img/smallmugshot.jpg"
-							class="w-64"
-							alt="Colin Reeves"
-						/>
-					</div>
-					<div class="self-start content">
-						<div>
-							Colin Reeves is an earth
-							scientist with 40 years’
-							experience in the
-							instigation, execution
-							and interpretation of
-							regio...
-						</div>
-						<div class="ref">
-							READ MORE...
-						</div>
+				<div class="pt-2 content">
+					<p>
+						Suspendisse maecenas inceptos
+						posuere urna purus malesuada
+						fringilla luctus at senectus
+						phasellus semper, nunc lacinia
+						pellentesque ridiculus nam
+						vehicula tristique lectus arcu
+						pharetra. Feugiat quisque
+						finibus congue proin quam montes
+						et massa sollicitudin primis,
+						habitasse hendrerit arcu leo
+						platea facilisi hac posuere
+						ipsum rhoncus etiam, nibh lacus
+						commodo ligula ex penatibus orci
+						dis ornare. Maximus porta
+						penatibus tempor magna volutpat
+						lectus, viverra dapibus a
+						integer enim scelerisque
+						placerat, odio quisque
+						vestibulum aliquet lobortis.
+						Lacinia aliquam habitant
+						consequat a tellus massa cubilia
+						ac sit, conubia pretium
+						vestibulum platea aenean fusce
+						rutrum molestie hac, magnis cras
+						interdum natoque nec ultricies
+						penatibus est.
+					</p>
+					<p>
+						Lacus primis dis litora a
+						dignissim fermentum aptent dui,
+						et mauris maximus hendrerit arcu
+						varius suscipit, fringilla
+						imperdiet odio convallis porta
+						quisque aliquet. Et platea
+						aliquam eleifend bibendum
+						vestibulum, potenti proin orci
+						etiam amet, montes primis at
+						metus. Duis ante metus ultricies
+						phasellus turpis mollis volutpat
+						tellus cubilia netus congue
+						porta lobortis, class himenaeos
+						curae commodo ad dis est integer
+						nam urna feugiat. Mattis
+						venenatis tellus aenean luctus
+						maximus vivamus parturient augue
+						nisl quis dapibus aliquet, sem
+						odio gravida purus mauris
+						viverra senectus nostra platea
+						ridiculus.
+					</p>
+					<div class="float-right ref">
+						READ MORE...
 					</div>
 				</div>
 			</div>
 
-			<!-- Newest Update -->
-			<div class="p-4 bg-white shadow-sm">
+			<!-- News Items -->
+			<div class="card">
 				<div
-					class="w-full text-xl font-bold seperator-down header"
+					class="w-full text-xl seperator-down header"
 				>
-					Newest Update
+					Morbi pulvinar inceptos class dis eros
+					interdum.
 				</div>
-				<div class="py-4 content">
-					Justo mauris lorem metus vulputate in
-					nam ad aptent, eros class ut
-					sollicitudin nibh ornare diam, curae
-					ridiculus dis sodales tristique finibus
-					at. Litora etiam leo aptent eros
-					placerat lacus cursus senectus aliquet
-					feugiat taciti nibh, elementum potenti
-					mus viverra posuere metus dictum
-					condimentum quam lobortis finibus
-					ornare, sodales mauris magnis efficitur
-					lacinia cras felis quis ex dignissim
-					class. Auctor litora felis luctus nunc
-					ac erat natoque morbi fermentum.
+				<div class="pt-2 content">
+					<p>
+						Suspendisse maecenas inceptos
+						posuere urna purus malesuada
+						fringilla luctus at senectus
+						phasellus semper, nunc lacinia
+						pellentesque ridiculus nam
+						vehicula tristique lectus arcu
+						pharetra. Feugiat quisque
+						finibus congue proin quam montes
+						et massa sollicitudin primis,
+						habitasse hendrerit arcu leo
+						platea facilisi hac posuere
+						ipsum rhoncus etiam, nibh lacus
+						commodo ligula ex penatibus orci
+						dis ornare. Maximus porta
+						penatibus tempor magna volutpat
+						lectus, viverra dapibus a
+						integer enim scelerisque
+						placerat, odio quisque
+						vestibulum aliquet lobortis.
+						Lacinia aliquam habitant
+						consequat a tellus massa cubilia
+						ac sit, conubia pretium
+						vestibulum platea aenean fusce
+						rutrum molestie hac, magnis cras
+						interdum natoque nec ultricies
+						penatibus est.
+					</p>
+					<p>
+						Lacus primis dis litora a
+						dignissim fermentum aptent dui,
+						et mauris maximus hendrerit arcu
+						varius suscipit, fringilla
+						imperdiet odio convallis porta
+						quisque aliquet. Et platea
+						aliquam eleifend bibendum
+						vestibulum, potenti proin orci
+						etiam amet, montes primis at
+						metus. Duis ante metus ultricies
+						phasellus turpis mollis volutpat
+						tellus cubilia netus congue
+						porta lobortis, class himenaeos
+						curae commodo ad dis est integer
+						nam urna feugiat. Mattis
+						venenatis tellus aenean luctus
+						maximus vivamus parturient augue
+						nisl quis dapibus aliquet, sem
+						odio gravida purus mauris
+						viverra senectus nostra platea
+						ridiculus.
+					</p>
+					<div class="float-right ref">
+						READ MORE...
+					</div>
 				</div>
-				<div class="ref">
-					READ MORE...
+			</div>
+
+			<!-- News Items -->
+			<div class="card">
+				<div
+					class="w-full text-xl seperator-down header"
+				>
+					Morbi pulvinar inceptos class dis eros
+					interdum.
+				</div>
+				<div class="pt-2 content">
+					<p>
+						Suspendisse maecenas inceptos
+						posuere urna purus malesuada
+						fringilla luctus at senectus
+						phasellus semper, nunc lacinia
+						pellentesque ridiculus nam
+						vehicula tristique lectus arcu
+						pharetra. Feugiat quisque
+						finibus congue proin quam montes
+						et massa sollicitudin primis,
+						habitasse hendrerit arcu leo
+						platea facilisi hac posuere
+						ipsum rhoncus etiam, nibh lacus
+						commodo ligula ex penatibus orci
+						dis ornare. Maximus porta
+						penatibus tempor magna volutpat
+						lectus, viverra dapibus a
+						integer enim scelerisque
+						placerat, odio quisque
+						vestibulum aliquet lobortis.
+						Lacinia aliquam habitant
+						consequat a tellus massa cubilia
+						ac sit, conubia pretium
+						vestibulum platea aenean fusce
+						rutrum molestie hac, magnis cras
+						interdum natoque nec ultricies
+						penatibus est.
+					</p>
+					<p>
+						Lacus primis dis litora a
+						dignissim fermentum aptent dui,
+						et mauris maximus hendrerit arcu
+						varius suscipit, fringilla
+						imperdiet odio convallis porta
+						quisque aliquet. Et platea
+						aliquam eleifend bibendum
+						vestibulum, potenti proin orci
+						etiam amet, montes primis at
+						metus. Duis ante metus ultricies
+						phasellus turpis mollis volutpat
+						tellus cubilia netus congue
+						porta lobortis, class himenaeos
+						curae commodo ad dis est integer
+						nam urna feugiat. Mattis
+						venenatis tellus aenean luctus
+						maximus vivamus parturient augue
+						nisl quis dapibus aliquet, sem
+						odio gravida purus mauris
+						viverra senectus nostra platea
+						ridiculus.
+					</p>
+					<div class="ref float-right">
+						READ MORE...
+					</div>
 				</div>
 			</div>
 		</div>
