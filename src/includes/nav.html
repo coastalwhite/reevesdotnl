@@ -1,9 +1,9 @@
 {% macro navitem(title, href, enabled) %}
-<div
-	class="{% if enabled %} font-bold card {% else %} p-4 hover:underline {% endif %} text-center "
+<a
+	class="{% if enabled %} font-bold card {% else %} p-4 hover:underline {% endif %} text-center nav-item"
+	href="{{ href }}"
+	>{{ title }}</a
 >
-	<a href="{{ href }}">{{ title }}</a>
-</div>
 {% endmacro %}
 
 <!-- Navbar -->
@@ -20,13 +20,15 @@
 		</div>
 	</div>
 	<div class="md:squish-center-container">
-		<div class="flex flex-col justify-between md:flex-row font-header">
-			{{ navitem('Home', '/', home) }}
-			{{ navitem('Gondwana', '/gondwana.html', gondwana) }}
-			{{ navitem('News', '/news/index.html', news) }}
-			{{ navitem('Publications', '/publications.html', publications) }}
-			{{ navitem('About', '/about.html', about) }}
-			{{ navitem('Contact', '/contact.html', contact) }}
+		<div
+			class="flex flex-col justify-between md:flex-row font-header"
+		>
+			{{ navitem('Home', '/', home) }} {{ navitem('Gondwana',
+			'/gondwana.html', gondwana) }} {{ navitem('News',
+			'/news/index.html', news) }} {{ navitem('Publications',
+			'/publications.html', publications) }} {{
+			navitem('About', '/about.html', about) }} {{
+			navitem('Contact', '/contact.html', contact) }}
 		</div>
 	</div>
 </div>
