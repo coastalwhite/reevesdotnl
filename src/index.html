@@ -1,13 +1,11 @@
-{% extends 'src/includes/base.html' %}
-
-{% block content %}
+{% extends 'src/includes/base.html' %} {% block content %}
 <!-- Content -->
 <div class="md:squish-center-container">
 	<div class="w-full md:grid-2/1 md:gap-x-4">
 		<!-- Gondwana Animation -->
 		<a
 			href="/gondwana.html"
-			class="flex flex-col mb-4 card md:mb-0"
+			class="mb-4 grid grid-cols-1 gap-y-4 card md:mb-0 row-span-2"
 		>
 			<div
 				class="w-full text-xl font-bold seperator-down header"
@@ -23,7 +21,7 @@
 			</div>
 		</a>
 
-		<div class="flex flex-col gap-y-4 row-span-2">
+		<div class="grid grid-cols-1 gap-y-4">
 			<!-- About -->
 			<div class="card">
 				<div
@@ -54,14 +52,16 @@
 							regio...
 						</div>
 						<div class="ref">
-							READ MORE...
+							<a href="/about.html">
+								READ MORE...
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<!-- Newest Update -->
-			<div class="p-4 bg-white shadow-sm">
+			<div class="card">
 				<div
 					class="w-full text-xl font-bold seperator-down header"
 				>
@@ -83,7 +83,9 @@
 					ac erat natoque morbi fermentum.
 				</div>
 				<div class="ref">
-					READ MORE...
+					<a href="/news">
+						READ MORE...
+					</a>
 				</div>
 			</div>
 		</div>
