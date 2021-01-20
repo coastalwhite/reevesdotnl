@@ -1,5 +1,5 @@
-// @deno-types="https://deno.land/x/bq_denjucks/mod.d.ts"
-import denjucks from "https://deno.land/x/bq_denjucks/mod.js";
+// @deno-types="https://deno.land/x/bq_denjucks@1.1.2/mod.d.ts"
+import denjucks from "https://deno.land/x/bq_denjucks@1.1.2/mod.js";
 
 const exportFiles = [
 	{ fileName: "index.html", data: { home: true } },
