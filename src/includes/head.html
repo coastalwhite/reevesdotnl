@@ -1,8 +1,11 @@
 <head>
-	<meta charset="UTF-8" />
+	<meta http-equiv="Content-type" content="text/html" charset="UTF-8" />
+	<!-- <base href="http://reeves.nl/" /> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>
-		Reeves / Earthworks - Global thinking in exporation geoscience
+		{% if title %}{{ title }} - Reeves / Earthworks{% else %} Reeves / Earthworks
+		- Global thinking in exporation geoscience {% endif %}
 	</title>
+	<meta name="description" content="{{ description }}" />
 	<link rel="stylesheet" href="/assets/css/min.tailwind.css" />
 </head>
