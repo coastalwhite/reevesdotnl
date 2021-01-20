@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	@variants responsive {
+		.header {
+			@apply text-headercolor;
+			@apply font-header;
+			@apply text-2xl;
+		}
+
+		.content {
+			@apply text-contentcolor;
+			@apply font-content;
+			@apply text-base;
+		}
+
+		.seperator-down {
+			@apply border-b-2;
+			@apply border-seperatorcolor;
+		}
+
+		.ref {
+			@apply text-refcolor;
+			@apply font-header;
+			@apply font-bold;
+			@apply text-lg;
+		}
+
+		.squish-center-container {
+			@apply container; /* container */
+
+			@apply px-64; /* Squishing */
+			@apply mx-auto; /* Centering */
+		}
+
+		.menu-card {
+			@apply shadow-md;
+			@apply bg-titlebgcolor;
+			@apply font-content;
+		}
+
+		.card {
+			@apply p-4;
+			@apply menu-card;
+		}
+	}
+}
