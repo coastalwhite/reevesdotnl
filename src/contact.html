@@ -1,12 +1,10 @@
 {% extends 'src/includes/base.html' %} {% block content %}
+
 <!-- Content -->
-<div class="squish-center-container">
-	<div
-		class="w-full grid grid-cols-2 grid-rows-2 gap-x-4"
-		style="grid-template-columns: 1fr 2fr; grid-template-rows: auto auto;"
-	>
+<div class="md:squish-center-container">
+	<div class="w-full md:grid-1/2 md:gap-x-4">
 		<!-- Gondwana Animation -->
-		<div class="flex flex-col row-span-2 card gap-y-2">
+		<div class="flex flex-col mb-4 row-span-2 card gap-y-2 md:mb-0">
 			<div
 				class="w-full text-xl font-bold seperator-down header"
 			>
@@ -27,40 +25,56 @@
 		</div>
 
 		<div class="card content">
-			<div class="grid grid-cols-2 gap-y-2 gap-x-2">
-				<div class="italic">
+			<div
+				class="grid grid-cols-1 md:grid-cols-2 gap-y-2 md:gap-x-2"
+			>
+				<div class="italic font-bold">
 					Postal Address:
 				</div>
-				<div>
+				<div class="mb-2 md:mb:0">
 					Achterom 41a<br />
 					2611 PL Delft<br />
 					The Netherlands
 				</div>
-				<div class="italic">
+				<div class="italic font-bold">
 					Visiting Address:
 				</div>
-				<div>
+				<div class="mb-2 md:mb:0">
 					Lange Geer 44<br />
 					2611 PW Delft<br />
 					The Netherlands
 				</div>
-				<div class="italic">
+				<div class="italic font-bold">
 					Mobile phone:
 				</div>
-				<div>
-					+31 611 35 62 72
+				<div class="mb-2 md:mb:0">
+					<a
+						class="text-refcolor"
+						href="tel:+31-611-35-62-72"
+						target="_blank"
+					>
+						+31 611 35 62 72
+					</a>
 				</div>
-				<div class="italic">
+				<div class="italic font-bold ">
 					E-mail:
 				</div>
-				<div>
-					reeves.earth@planet.nl
+				<div class="mb-2 md:mb:0">
+					<a
+						class="text-refcolor"
+						href="mailto:reeves.earth@planet.nl"
+						target="_blank"
+					>
+						reeves.earth@planet.nl
+					</a>
 				</div>
-				<div class="italic">
+				<div class="italic font-bold">
 					Website:
 				</div>
 				<div>
-					<a href="/">www.reeves.nl</a>
+					<a class="text-refcolor" href="/"
+						>www.reeves.nl</a
+					>
 				</div>
 			</div>
 		</div>

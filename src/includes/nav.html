@@ -9,17 +9,18 @@
 <!-- Navbar -->
 <div class="pb-4">
 	<div class="max-w-screen menu-card">
-		<div class="squish-center-container">
+		<div class="w-full md:squish-center-container">
 			<div>
 				<img
+					class="max-w-full px-2 mx-auto md:mx-0 md:px-2"
 					src="/assets/img/logo-earthworks.jpg"
 					alt="Logo Earthworks"
 				/>
 			</div>
 		</div>
 	</div>
-	<div class="squish-center-container">
-		<div class="flex flex-row justify-between font-header">
+	<div class="md:squish-center-container">
+		<div class="flex flex-col justify-between md:flex-row font-header">
 			{{ navitem('Home', '/', home) }}
 			{{ navitem('Gondwana', '/gondwana.html', gondwana) }}
 			{{ navitem('News', '/news/index.html', news) }}

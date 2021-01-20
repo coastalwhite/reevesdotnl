@@ -31,7 +31,8 @@
 		.squish-center-container {
 			@apply container; /* container */
 
-			@apply px-48; /* Squishing */
+			@apply lg:px-32; /* Squishing */
+			@apply md:px-16; /* Squishing */
 			@apply mx-auto; /* Centering */
 		}
 
