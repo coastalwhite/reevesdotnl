@@ -1,26 +1,24 @@
-{% extends 'src/includes/base.html' %}
-
-{% block content %}
+{% extends 'src/includes/base.html' %} {% block content %}
 <!-- Content -->
 <div class="squish-center-container">
-	<div class="flex flex-row w-full gap-x-4">
+	<div class="w-full grid-2/1 gap-x-4">
 		<!-- Gondwana Animation -->
-		<div
-			class="flex flex-col flex-grow card"
-			style="height: 30rem;"
-		>
+		<div class="flex flex-col card">
 			<div
 				class="w-full text-xl font-bold seperator-down header"
 			>
 				Gondwana
 			</div>
-			<div
-				class="flex-grow bg-right-bottom bg-no-repeat bg-contain"
-				style="background-image: url('/assets/img/animation.gif');"
-			></div>
+			<div class="content-center align-middle">
+				<img
+					class="w-full"
+					src="/assets/img/animation.gif"
+					alt="Animation of Colin Reeves"
+				/>
+			</div>
 		</div>
 
-		<div class="flex flex-col gap-y-4 w-80">
+		<div class="flex flex-col gap-y-4 row-span-2">
 			<!-- About -->
 			<div class="card">
 				<div

@@ -1,33 +1,30 @@
-{% extends 'src/includes/base.html' %} {% block content %}
-
-{% macro link(title, href) %}
-<div
-	class="py-2 header seperator-down hover:underline"
->
+{% extends 'src/includes/base.html' %} {% block content %} {% macro link(title,
+href) %}
+<div class="py-2 header seperator-down hover:underline">
 	<a class="text-xl text-refcolor" href="{{ href }}">{{ title }}</a>
 </div>
 {% endmacro %}
 
 <!-- Content -->
 <div class="squish-center-container">
-	<div class="flex flex-row w-full gap-x-4">
+	<div class="w-full grid-2/1 gap-x-4">
 		<!-- Gondwana Animation -->
-		<div
-			class="flex flex-col flex-grow card"
-			style="height: 30rem;"
-		>
+		<div class="flex flex-col card">
 			<div
 				class="w-full text-xl font-bold seperator-down header"
 			>
 				Gondwana
 			</div>
-			<div
-				class="flex-grow bg-right-bottom bg-no-repeat bg-contain"
-				style="background-image: url('assets/img/gondwana.gif');"
-			></div>
+			<div class="content-center align-middle">
+				<img
+					class="w-full"
+					src="/assets/img/gondwana.gif"
+					alt="Gondwana Animation"
+				/>
+			</div>
 		</div>
 
-		<div class="flex flex-col gap-y-4 w-80">
+		<div class="flex flex-col gap-y-4 row-span-2">
 			<!-- Links -->
 			<div class="card">
 				<div
@@ -51,11 +48,12 @@
 					</div>
 				</div>
 				<div class="pt-2">
-					{{ link('Principles of global tectonics', '/') }}
-					{{ link('Selected animations', '/') }}
-					{{ link('Research updates', '/') }}
-					{{ link('Twelve lectures', '/') }}
-					{{ link('Other material', '/') }}
+					{{ link('Principles of global
+					tectonics', '/') }} {{ link('Selected
+					animations', '/') }} {{ link('Research
+					updates', '/') }} {{ link('Twelve
+					lectures', '/') }} {{ link('Other
+					material', '/') }}
 				</div>
 			</div>
 		</div>
