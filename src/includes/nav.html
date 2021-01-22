@@ -1,6 +1,6 @@
 {% macro navitem(title, href, enabled) %}
 <a
-	class="{% if enabled %} font-bold card {% else %} p-4 hover:underline {% endif %} text-center nav-item"
+	class="{% if enabled %} font-bold card {% else %} p-4 hover:underline {% endif %} text-center nav-item hidden md:block"
 	href="{{ href }}"
 	>{{ title }}</a
 >
@@ -23,6 +23,16 @@
 		<div
 			class="flex flex-col justify-between md:flex-row font-header"
 		>
+			<div
+				class="flex flex-col justify-center w-16 w-full px-4 card space-y-2 md:w-auto md:hidden"
+				onClick="Array.from(document.getElementsByClassName('nav-item')).forEach(navItem => navItem.classList.contains('hidden') ? navItem.classList.remove('hidden') : navItem.classList.add('hidden'))"
+			>
+				<img
+					class="h-8 md:h-auto"
+					src="/assets/svg/drawer.svg"
+					alt="Show/Hide Menu"
+				/>
+			</div>
 			{{ navitem('Home', '/', home) }} {{ navitem('Gondwana',
 			'/gondwana.html', gondwana) }} {{ navitem('News',
 			'/news/index.html', news) }} {{ navitem('Publications',
