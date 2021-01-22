@@ -32,39 +32,49 @@
 		<div
 			class="flex flex-col justify-between md:flex-row font-header"
 		>
+			<div
+				class="flex flex-col justify-center w-16 w-full px-4 card space-y-2 md:w-auto md:hidden"
+				onClick="Array.from(document.getElementsByClassName('nav-item')).forEach(navItem => navItem.classList.contains('hidden') ? navItem.classList.remove('hidden') : navItem.classList.add('hidden'))"
+			>
+				<img
+					class="h-8 md:h-auto"
+					src="/assets/svg/drawer.svg"
+					alt="Show/Hide Menu"
+				/>
+			</div>
 			
 <a
-	class=" p-4 hover:underline  text-center nav-item"
+	class=" p-4 hover:underline  text-center nav-item hidden md:block"
 	href="/"
 	>Home</a
 >
  
 <a
-	class=" p-4 hover:underline  text-center nav-item"
+	class=" p-4 hover:underline  text-center nav-item hidden md:block"
 	href="/gondwana.html"
 	>Gondwana</a
 >
  
 <a
-	class=" p-4 hover:underline  text-center nav-item"
+	class=" p-4 hover:underline  text-center nav-item hidden md:block"
 	href="/news/index.html"
 	>News</a
 >
  
 <a
-	class=" font-bold card  text-center nav-item"
+	class=" font-bold card  text-center nav-item hidden md:block"
 	href="/publications.html"
 	>Publications</a
 >
  
 <a
-	class=" p-4 hover:underline  text-center nav-item"
+	class=" p-4 hover:underline  text-center nav-item hidden md:block"
 	href="/about.html"
 	>About</a
 >
  
 <a
-	class=" p-4 hover:underline  text-center nav-item"
+	class=" p-4 hover:underline  text-center nav-item hidden md:block"
 	href="/contact.html"
 	>Contact</a
 >

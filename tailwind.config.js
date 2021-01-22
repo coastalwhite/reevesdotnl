@@ -1,5 +1,5 @@
 module.exports = {
-	purge: { enabled: true, content: ["./**/*.html"] },
+	purge: { enabled: true, content: ["./*.html", "./news/**/*.html"] },
 	darkMode: false,
 	theme: {
 		extend: {

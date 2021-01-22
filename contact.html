@@ -32,39 +32,49 @@
 		<div
 			class="flex flex-col justify-between md:flex-row font-header"
 		>
+			<div
+				class="flex flex-col justify-center w-16 w-full px-4 card space-y-2 md:w-auto md:hidden"
+				onClick="Array.from(document.getElementsByClassName('nav-item')).forEach(navItem => navItem.classList.contains('hidden') ? navItem.classList.remove('hidden') : navItem.classList.add('hidden'))"
+			>
+				<img
+					class="h-8 md:h-auto"
+					src="/assets/svg/drawer.svg"
+					alt="Show/Hide Menu"
+				/>
+			</div>
 			
 <a
-	class=" p-4 hover:underline  text-center nav-item"
+	class=" p-4 hover:underline  text-center nav-item hidden md:block"
 	href="/"
 	>Home</a
 >
  
 <a
-	class=" p-4 hover:underline  text-center nav-item"
+	class=" p-4 hover:underline  text-center nav-item hidden md:block"
 	href="/gondwana.html"
 	>Gondwana</a
 >
  
 <a
-	class=" p-4 hover:underline  text-center nav-item"
+	class=" p-4 hover:underline  text-center nav-item hidden md:block"
 	href="/news/index.html"
 	>News</a
 >
  
 <a
-	class=" p-4 hover:underline  text-center nav-item"
+	class=" p-4 hover:underline  text-center nav-item hidden md:block"
 	href="/publications.html"
 	>Publications</a
 >
  
 <a
-	class=" p-4 hover:underline  text-center nav-item"
+	class=" p-4 hover:underline  text-center nav-item hidden md:block"
 	href="/about.html"
 	>About</a
 >
  
 <a
-	class=" font-bold card  text-center nav-item"
+	class=" font-bold card  text-center nav-item hidden md:block"
 	href="/contact.html"
 	>Contact</a
 >
@@ -112,14 +122,16 @@
 					2611 PL Delft<br />
 					The Netherlands
 				</div>
+
 				<div class="italic font-bold">
 					Visiting Address:
 				</div>
 				<div class="mb-2 md:mb:0">
-					Lange Geer 44<br />
+					Lange Geer 44A<br />
 					2611 PW Delft<br />
 					The Netherlands
 				</div>
+
 				<div class="italic font-bold">
 					Mobile phone:
 				</div>
@@ -132,6 +144,7 @@
 						+31 611 35 62 72
 					</a>
 				</div>
+
 				<div class="italic font-bold ">
 					E-mail:
 				</div>
@@ -144,6 +157,7 @@
 						reeves.earth@planet.nl
 					</a>
 				</div>
+
 				<div class="italic font-bold">
 					Website:
 				</div>
