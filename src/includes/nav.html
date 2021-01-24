@@ -25,7 +25,15 @@
 		>
 			<div
 				class="flex flex-col justify-center w-16 w-full px-4 card space-y-2 md:w-auto md:hidden"
-				onClick="Array.from(document.getElementsByClassName('nav-item')).forEach(navItem => navItem.classList.contains('hidden') ? navItem.classList.remove('hidden') : navItem.classList.add('hidden'))"
+				onClick="
+					Array.from(
+						document.getElementsByClassName('nav-item')
+					).forEach(navItem =>
+						navItem.classList.contains('hidden') ?
+							navItem.classList.remove('hidden') :
+							navItem.classList.add('hidden')
+					)
+				"
 			>
 				<img
 					class="h-8 md:h-auto"
@@ -33,12 +41,13 @@
 					alt="Show/Hide Menu"
 				/>
 			</div>
-			{{ navitem('Home', '/', home) }} {{ navitem('Gondwana',
-			'/gondwana.html', gondwana) }} {{ navitem('News',
-			'/news/index.html', news) }} {{ navitem('Publications',
-			'/publications.html', publications) }} {{
-			navitem('About', '/about.html', about) }} {{
-			navitem('Contact', '/contact.html', contact) }}
+
+			{{ navitem('Home', '/', home) }}
+			{{ navitem('Gondwana', '/gondwana/index.html', gondwana) }}
+			{{ navitem('News', '/news/index.html', news) }}
+			{{ navitem('Publications', '/publications.html', publications) }}
+			{{ navitem('About', '/about.html', about) }}
+			{{ navitem('Contact', '/contact.html', contact) }}
 		</div>
 	</div>
 </div>

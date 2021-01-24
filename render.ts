@@ -12,11 +12,41 @@ const exportFiles = [
 		},
 	},
 	{
-		fileName: "gondwana.html",
-		path: "",
+		fileName: "index.html",
+		path: "gondwana/",
 		data: {
 			gondwana: true,
 			title: "Gondwana",
+			description:
+				"Colin Reeves is an earth scientist with 40 years’ experience in the instigation, execution and interpretation of regional (particularly airborne) geophysical surveys in Africa, India, Australia and the Americas, spread across the government, commercial and educational sectors.",
+		},
+	},
+	{
+		fileName: "course.html",
+		path: "gondwana/",
+		data: {
+			gondwana: true,
+			title: "Gondwana Course",
+			description:
+				"Colin Reeves is an earth scientist with 40 years’ experience in the instigation, execution and interpretation of regional (particularly airborne) geophysical surveys in Africa, India, Australia and the Americas, spread across the government, commercial and educational sectors.",
+		},
+	},
+	{
+		fileName: "animations.html",
+		path: "gondwana/",
+		data: {
+			gondwana: true,
+			title: "Gondwana Animations",
+			description:
+				"Colin Reeves is an earth scientist with 40 years’ experience in the instigation, execution and interpretation of regional (particularly airborne) geophysical surveys in Africa, India, Australia and the Americas, spread across the government, commercial and educational sectors.",
+		},
+	},
+	{
+		fileName: "updates.html",
+		path: "gondwana/",
+		data: {
+			gondwana: true,
+			title: "Gondwana Updates",
 			description:
 				"Colin Reeves is an earth scientist with 40 years’ experience in the instigation, execution and interpretation of regional (particularly airborne) geophysical surveys in Africa, India, Australia and the Americas, spread across the government, commercial and educational sectors.",
 		},

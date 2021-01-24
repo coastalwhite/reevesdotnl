@@ -1,0 +1,52 @@
+{% macro link(title, href) %}
+<div class="py-2 header seperator-down hover:underline">
+	<a class="text-lg text-refcolor" href="{{ href }}">{{ title }}</a>
+</div>
+{% endmacro %}
+
+{% extends 'src/templates/2-cards.html' %}
+
+{% block fractions %}3/2{% endblock %}
+
+{% block leftcards %}
+<!-- Course picture -->
+<div class="content-center align-middle card">
+	<img
+		class="object-cover h-full"
+		src="/assets/img/gondwana.gif"
+		alt="Gondwana Animation"
+	/>
+</div>
+{% endblock %}
+
+{% block rightcards %}
+<!-- Links -->
+<div class="card row-span-2">
+	<div class="w-full font-bold seperator-down header">
+		Research Updates
+	</div>
+	<div class="content">
+		Sagittis tincidunt congue adipiscing platea fringilla praesent sit,
+		dolor lacinia nunc non interdum dis.
+	</div>
+	<div class="pt-2">
+		{{ link('1. Cursus himenaeos luctus etiam cubilia varius', '/') }}
+		{{ link('2 Cursus himenaeos luctus etiam cubilia varius', '/') }}
+		{{ link('3. Cursus himenaeos luctus etiam cubilia varius', '/') }}
+		{{ link('4. Cursus himenaeos luctus etiam cubilia varius', '/') }}
+		{{ link('5. Cursus himenaeos luctus etiam cubilia varius', '/') }}
+		{{ link('6. Cursus himenaeos luctus etiam cubilia varius', '/') }}
+		{{ link('6. Cursus himenaeos luctus etiam cubilia varius', '/') }}
+		{{ link('7. Cursus himenaeos luctus etiam cubilia varius', '/') }}
+		{{ link('8. Cursus himenaeos luctus etiam cubilia varius', '/') }}
+		{{ link('9. Cursus himenaeos luctus etiam cubilia varius', '/') }}
+		{{ link('10. Cursus himenaeos luctus etiam cubilia varius', '/') }}
+		{{ link('11. Cursus himenaeos luctus etiam cubilia varius', '/') }}
+		{{ link('12. Cursus himenaeos luctus etiam cubilia varius', '/') }}
+		{{ link('13. Cursus himenaeos luctus etiam cubilia varius', '/') }}
+		{{ link('14. Cursus himenaeos luctus etiam cubilia varius', '/') }}
+		{{ link('15. Cursus himenaeos luctus etiam cubilia varius', '/') }}
+		{{ link('16. Cursus himenaeos luctus etiam cubilia varius', '/') }}
+	</div>
+</div>
+{% endblock %}
