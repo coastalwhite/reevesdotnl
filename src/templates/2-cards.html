@@ -1,0 +1,15 @@
+{% extends 'src/includes/base.html' %}
+
+{% block content %}
+<!-- Content -->
+<div
+	class="flex-grow md:squish-center-container md:grid md:grid-rows-2 md-grid-cols-2 md:gap-4"
+	style="grid-template-columns: {% block fractions %}{% endblock %}; grid-template-rows: auto auto;"
+>
+	{% block leftcards %}
+	{% endblock %}
+
+	{% block rightcards %}
+	{% endblock %}
+</div>
+{% endblock %}

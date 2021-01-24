@@ -1,94 +1,70 @@
-{% extends 'src/includes/base.html' %} {% block content %}
-<!-- Content -->
-<div class="md:squish-center-container">
-	<div class="w-full md:grid-2/1 md:gap-x-4">
-		<!-- Gondwana Animation -->
-		<a
-			href="/gondwana.html"
-			class="mb-4 grid grid-cols-1 gap-y-4 card md:mb-0 row-span-2"
-		>
-			<div
-				class="w-full text-xl font-bold seperator-down header"
-			>
-				Gondwana
-			</div>
-			<div class="content-center align-middle">
-				<img
-					class="w-full"
-					src="/assets/img/animation.gif"
-					alt="Animation of Colin Reeves"
-				/>
-			</div>
-		</a>
+{% extends 'src/templates/2-cards.html' %}
 
-		<div class="grid grid-cols-1 gap-y-4">
-			<!-- About -->
-			<div class="card">
-				<div
-					class="w-full text-xl seperator-down header"
-				>
-					About
-					<b>
-						Colin Reeves
-					</b>
-				</div>
-				<div
-					class="flex flex-row items-center content-center pt-4 space-x-4"
-				>
-					<div>
-						<img
-							src="/assets/img/smallmugshot.jpg"
-							class="w-64"
-							alt="Colin Reeves"
-						/>
-					</div>
-					<div class="self-start content">
-						<div>
-							Colin Reeves is an earth
-							scientist with 40 years’
-							experience in the
-							instigation, execution
-							and interpretation of
-							regio...
-						</div>
-						<div class="ref">
-							<a href="/about.html">
-								READ MORE...
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
+{% block fractions %}3fr 2fr{% endblock %}
 
-			<!-- Newest Update -->
-			<div class="card">
-				<div
-					class="w-full text-xl font-bold seperator-down header"
-				>
-					Newest Update
-				</div>
-				<div class="py-4 content">
-					Justo mauris lorem metus vulputate in
-					nam ad aptent, eros class ut
-					sollicitudin nibh ornare diam, curae
-					ridiculus dis sodales tristique finibus
-					at. Litora etiam leo aptent eros
-					placerat lacus cursus senectus aliquet
-					feugiat taciti nibh, elementum potenti
-					mus viverra posuere metus dictum
-					condimentum quam lobortis finibus
-					ornare, sodales mauris magnis efficitur
-					lacinia cras felis quis ex dignissim
-					class. Auctor litora felis luctus nunc
-					ac erat natoque morbi fermentum.
-				</div>
-				<div class="ref">
-					<a href="/news">
-						READ MORE...
-					</a>
-				</div>
+{% block leftcards %}
+<!-- Gondwana Animation -->
+<a href="/gondwana.html" class="flex flex-col card row-span-2">
+	<div class="w-full text-xl font-bold seperator-down header">
+		Gondwana
+	</div>
+	<div class="content-end flex-grow align-middle">
+		<img
+			class="object-cover h-full"
+			src="/assets/img/animation.gif"
+			alt="Animation of Colin Reeves"
+		/>
+	</div>
+</a>
+{% endblock %}
+
+{% block rightcards %}
+<!-- About -->
+<div class="flex flex-col card">
+	<div class="w-full text-xl seperator-down header">
+		About
+		<b>
+			Colin Reeves
+		</b>
+	</div>
+	<div class="flex flex-row items-center content-center flex-grow pt-4 space-x-4">
+		<div>
+			<img
+				src="/assets/img/smallmugshot.jpg"
+				class="w-64"
+				alt="Colin Reeves"
+			/>
+		</div>
+		<div class="content">
+			<div>
+				Colin Reeves is an earth scientist with 40
+				years’ experience in the instigation, execution
+				and interpretation of regio...
+			</div>
+			<div class="ref">
+				<a href="/about.html">
+					READ MORE...
+				</a>
 			</div>
 		</div>
+	</div>
+</div>
+
+<!-- Newest Update -->
+<div class="flex flex-col card">
+	<div class="w-full text-xl font-bold seperator-down header">
+		Newest Update
+	</div>
+	<div class="flex-grow py-4 content">
+		Justo mauris lorem metus vulputate in nam ad aptent, eros class
+		ut sollicitudin nibh ornare diam, curae ridiculus dis sodales
+		tristique finibus at. Litora etiam leo aptent eros placerat
+		lacus cursus senectus aliquet feugiat taciti nibh, elementum.
+	</div>
+	<div class="ref">
+		<a href="/news">
+			READ MORE...
+		</a>
 	</div>
 </div>
 {% endblock %}

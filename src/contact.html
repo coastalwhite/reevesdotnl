@@ -1,86 +1,87 @@
-{% extends 'src/includes/base.html' %} {% block content %}
+{% extends 'src/templates/2-cards.html' %}
 
-<!-- Content -->
-<div class="md:squish-center-container">
-	<div class="w-full md:grid-1/2 md:gap-x-4">
-		<!-- Gondwana Animation -->
-		<div class="mb-4 grid grid-cols-1 row-span-2 card gap-y-2 md:mb-0">
-			<div
-				class="w-full text-xl font-bold seperator-down header"
-			>
-				Contact
-			</div>
-			<div>
-				<img
-					src="/assets/img/langegeer.jpg"
-					class="w-full"
-				/>
-			</div>
-			<div>
-				<img
-					src="/assets/img/office.jpg"
-					class="w-full"
-				/>
-			</div>
+{% block fractions %}1fr 3fr{% endblock %}
+
+{% block leftcards %}
+<!-- Contact Images -->
+<div class="flex flex-col card gap-y-4 row-span-2">
+	<div
+		class="w-full text-xl font-bold seperator-down header"
+	>
+		Contact
+	</div>
+	<div class="flex-grow">
+		<img
+			src="/assets/img/langegeer.jpg"
+			class="object-cover w-full"
+		/>
+	</div>
+	<div class="flex-grow">
+		<img
+			src="/assets/img/office.jpg"
+			class="object-cover w-full"
+		/>
+	</div>
+</div>
+{% endblock %}
+
+{% block rightcards %}
+<!-- Contact info card -->
+<div class="card content row-span-2">
+	<div
+		class="grid grid-cols-1 md:grid-cols-2 gap-y-2 md:gap-x-2"
+	>
+		<div class="italic font-bold">
+			Postal Address:
+		</div>
+		<div class="mb-2 md:mb:0">
+			Achterom 41a<br />
+			2611 PL Delft<br />
+			The Netherlands
 		</div>
 
-		<div class="card content">
-			<div
-				class="grid grid-cols-1 md:grid-cols-2 gap-y-2 md:gap-x-2"
+		<div class="italic font-bold">
+			Visiting Address:
+		</div>
+		<div class="mb-2 md:mb:0">
+			Lange Geer 44A<br />
+			2611 PW Delft<br />
+			The Netherlands
+		</div>
+
+		<div class="italic font-bold">
+			Mobile phone:
+		</div>
+		<div class="mb-2 md:mb:0">
+			<a
+				class="text-refcolor"
+				href="tel:+31-611-35-62-72"
+				target="_blank"
 			>
-				<div class="italic font-bold">
-					Postal Address:
-				</div>
-				<div class="mb-2 md:mb:0">
-					Achterom 41a<br />
-					2611 PL Delft<br />
-					The Netherlands
-				</div>
+				+31 611 35 62 72
+			</a>
+		</div>
 
-				<div class="italic font-bold">
-					Visiting Address:
-				</div>
-				<div class="mb-2 md:mb:0">
-					Lange Geer 44A<br />
-					2611 PW Delft<br />
-					The Netherlands
-				</div>
+		<div class="italic font-bold ">
+			E-mail:
+		</div>
+		<div class="mb-2 md:mb:0">
+			<a
+				class="text-refcolor"
+				href="mailto:reeves.earth@planet.nl"
+				target="_blank"
+			>
+				reeves.earth@planet.nl
+			</a>
+		</div>
 
-				<div class="italic font-bold">
-					Mobile phone:
-				</div>
-				<div class="mb-2 md:mb:0">
-					<a
-						class="text-refcolor"
-						href="tel:+31-611-35-62-72"
-						target="_blank"
-					>
-						+31 611 35 62 72
-					</a>
-				</div>
-
-				<div class="italic font-bold ">
-					E-mail:
-				</div>
-				<div class="mb-2 md:mb:0">
-					<a
-						class="text-refcolor"
-						href="mailto:reeves.earth@planet.nl"
-						target="_blank"
-					>
-						reeves.earth@planet.nl
-					</a>
-				</div>
-
-				<div class="italic font-bold">
-					Website:
-				</div>
-				<div>
-					<a class="text-refcolor" href="/"
-						>www.reeves.nl</a
-					>
-				</div>
-			</div>
+		<div class="italic font-bold">
+			Website:
+		</div>
+		<div>
+			<a class="text-refcolor" href="/"
+				>www.reeves.nl</a
+			>
 		</div>
 	</div>
 </div>

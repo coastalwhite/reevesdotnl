@@ -1,18 +1,18 @@
 {% macro navitem(title, href, enabled) %}
 <a
-	class="{% if enabled %} font-bold card {% else %} p-4 hover:underline {% endif %} text-center nav-item hidden md:block"
+	class="{% if enabled %} font-bold menu-card {% else %} hover:underline {% endif %} px-4 py-2 text-center nav-item hidden md:block"
 	href="{{ href }}"
 	>{{ title }}</a
 >
 {% endmacro %}
 
 <!-- Navbar -->
-<div class="pb-4">
+<div>
 	<div class="max-w-screen menu-card">
 		<div class="w-full md:squish-center-container">
 			<div>
 				<img
-					class="max-w-full px-2 mx-auto md:mx-0 md:px-2"
+					class="h-32 max-w-full px-2 mx-auto md:mx-0 md:px-2"
 					src="/assets/img/logo-earthworks.jpg"
 					alt="Logo Earthworks"
 				/>

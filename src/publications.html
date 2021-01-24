@@ -1,5 +1,4 @@
-{% extends 'src/includes/base.html' %} {% macro publicationClass(title, content,
-href) %}
+{% macro publicationClass(title, content, href) %}
 <div class="flex flex-col card gap-y-4">
 	<div class="w-full text-xl seperator-down header">
 		{{ title }}
@@ -13,35 +12,52 @@ href) %}
 		</a>
 	</div>
 </div>
-{% endmacro %} {% block content %}
-<!-- Content -->
-<div class="md:squish-center-container">
-	<div class="w-full md:grid-2/1 md:gap-x-4">
-		<!-- Gondwana Animation -->
-		<div class="mb-4 grid grid-cols-1 card gap-y-4 md:mb-0 row-span-2">
-			<div
-				class="w-full text-xl font-bold seperator-down header"
-			>
-				Publications
-			</div>
-			<div class="content-center align-middle">
-				<img
-					class="w-full"
-					src="/assets/img/publications.png"
-					alt="Publications of Colin Reeves"
-				/>
-			</div>
-		</div>
+{% endmacro %}
 
-		<div class="grid grid-cols-1 gap-y-4">
-			{{ publicationClass("Key Publications", "An introduction
-			to the publications that stood the test of time", "/")
-			}} {{ publicationClass("Comprehensive List", "A full
-			list of publications since 1970.", "/") }} {{
-			publicationClass("Gondwana publications", "A list of
-			publications relevant to Gondwana research, including
-			the work of students and their theses.", "/") }}
-		</div>
+{% extends 'src/templates/2-cards.html' %}
+
+{% block fractions %}3fr 2fr{% endblock %}
+
+{% block leftcards %}
+<!-- Publications Picture -->
+<div class="flex flex-col card row-span-2">
+	<div class="w-full text-xl font-bold seperator-down header">
+		Publications
 	</div>
+	<div class="content-center flex-grow align-middle">
+		<img
+			class="object-cover h-full"
+			src="/assets/img/publications.png"
+			alt="Publications of Colin Reeves"
+		/>
+	</div>
+</div>
+{% endblock %}
+
+{% block rightcards %}
+<!-- List of publications -->
+<div class="grid grid-cols-1 gap-y-2 row-span-2">
+	{{
+		publicationClass(
+			"Key Publications",
+			"An introduction to the publications that stood the test of time",
+			"/"
+		)
+	}}
+	{{
+		publicationClass(
+			"Comprehensive List",
+			"A full list of publications since 1970.",
+			"/"
+		)
+	}}
+	{{
+		publicationClass(
+			"Gondwana publications",
+			"A list of publications relevant to Gondwana research, including the work
+			of students and their theses.",
+			"/"
+		)
+	}}
 </div>
 {% endblock %}

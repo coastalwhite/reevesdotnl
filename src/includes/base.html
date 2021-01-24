@@ -2,14 +2,12 @@
 <html lang="en">
 	{% include 'src/includes/head.html' %}
 	<body>
-		<div class="min-h-screen pb-8 bg-bgcolor">
-			{% include 'src/includes/nav.html' %}
-			<div>
-				{% block content %}
-					No content set...
-				{% endblock %}
-			</div>
+		<div
+			class="flex flex-col min-h-screen max-w-screen bg-bgcolor space-y-4"
+		>
+			{% include 'src/includes/nav.html' %} {% block content
+			%} No content set... {% endblock %} {% include
+			'src/includes/footer.html' %}
 		</div>
-		{% include 'src/includes/footer.html' %}
 	</body>
 </html>
