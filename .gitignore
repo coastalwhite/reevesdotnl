@@ -1,6 +1,7 @@
 node_modules
 /*.html
 /news
+/gondwana
 /assets/css/*
 .DS_STORE
 
