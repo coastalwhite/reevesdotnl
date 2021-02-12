@@ -4,16 +4,14 @@
 
 {% block leftcards %}
 <!-- About pictures -->
-<div class="flex flex-col card gap-y-4 row-span-2">
-	<div class="w-full text-xl font-bold seperator-down header">
-		About
-	</div>
-	<div class="flex-grow">
-		<img src="/assets/img/personal.jpg" class="object-cover h-full" />
-	</div>
-	<div class="flex-grow">
-		<img src="/assets/img/magnetic-anomalies.bmp" class="object-cover h-full" />
-	</div>
+<div class="row-span-2">
+    <div class="flex flex-col card gap-y-4">
+        <div class="w-full text-xl font-bold seperator-down header">
+            About
+        </div>
+        <img src="/assets/img/personal.jpg" class="flex-grow object-cover max-w-full" />
+        <img src="/assets/img/magnetic-anomalies.bmp" class="flex-grow object-cover max-w-full" />
+    </div>
 </div>
 {% endblock %}
 
