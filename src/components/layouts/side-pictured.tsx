@@ -19,8 +19,12 @@ const SidePicturedLayout = (props: SidePicturedLayoutProps) => {
 
   return (
     <Base pageName={pageName}>
-      <Flex direction={["column", "row"]} w="100%">
-        <Box mr={["0", "4"]} mb={["4", "0"]} w={["100%", "sm"]}>
+      <Flex direction={["column", "column", "row"]} w="100%">
+        <Box
+          mr={["0", "0", "4"]}
+          mb={["4", "4", "0"]}
+          w={["100%", "100%", "sm"]}
+        >
           <SideImagesCard
             title={pageTitle}
             images={images}

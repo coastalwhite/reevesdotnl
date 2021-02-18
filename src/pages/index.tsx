@@ -8,7 +8,7 @@ const IndexPage = () => {
   return (
     <CoverImageLayout
       pageName="homepage"
-      coverImgSrc="/assets/img/animation.gif"
+      coverImgSrc="/assets/img/homepage.gif"
       coverImgAlt="Gondwana"
     >
       <Flex direction="column">

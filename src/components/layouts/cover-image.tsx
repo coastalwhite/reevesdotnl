@@ -23,15 +23,15 @@ const CoverImageLayout = (props: CoverImageLayoutProps) => {
 
   return (
     <Base pageName={pageName}>
-      <Flex direction={["column", "row"]} w="100%">
-        <Box flex="1" mr={["0", "4"]} mb={["4", "0"]} w={["100%", "auto"]}>
+      <Flex direction={["column", "column", "row"]} w="100%">
+        <Box flex="2" mr={["0", "0", "4"]} mb={["4", "4", "0"]} w={["100%", "auto", "auto"]}>
           <CoverImageCard
             title={pageTitle}
             src={coverImgSrc}
             alt={coverImgAlt}
           />
         </Box>
-        <Box w={["100%", "md"]}>
+        <Box flex="1" minW="md">
             {children}
         </Box>
       </Flex>

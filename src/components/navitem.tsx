@@ -12,6 +12,8 @@ const NavItem = (
       bg: "none",
       boxShadow: "none",
   }
+
+  const display = (props.doDisplay ? "block" : "none")
   return (<Link to={props.path}>
     <Card
       p="auto"
@@ -19,8 +21,8 @@ const NavItem = (
       py="2"
       textAlign="center"
       fontFamily="header"
-      display={[(props.doDisplay ? "block" : "none"), "block"]}
-      w={["100%", "auto"]}
+      display={[display, display, "block"]}
+      w={["100%", "100%", "auto"]}
       grow="1"
       { ...extraProps } 
     >

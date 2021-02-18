@@ -49,11 +49,9 @@ const PublicationsPage = () => {
       coverImgSrc="/assets/img/publications.png"
       coverImgAlt="Gondwana"
     >
-      <Box w={["100%", "md"]}>
-        <Flex direction="column">
-          {categories.map((category) => <CategoryCard {...category} />)}
-        </Flex>
-      </Box>
+      <Flex direction="column">
+        {categories.map((category) => <CategoryCard {...category} />)}
+      </Flex>
     </CoverImageLayout>
   );
 };

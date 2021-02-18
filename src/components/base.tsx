@@ -15,10 +15,10 @@ const Base = (props: BaseProps) => {
       bg="bgcolor"
       minH="100vh"
       maxW="100vw"
-      pb={["8", "0"]}
+      pb={["8", "8", "0"]}
     >
       <Menu enabled={props.pageName} />
-      <Box w={containerWidths} mx={["0", "auto"]} mt="4" flex="1">
+      <Box w={containerWidths} mx={["0", "auto", "auto"]} mt="4" flex="1">
         {props.children}
       </Box>
     </Flex>

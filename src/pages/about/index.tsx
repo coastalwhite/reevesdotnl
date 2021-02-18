@@ -36,11 +36,11 @@ const AboutPage = () => {
   const articles = [{
     title: "Colin Reeves",
     text: reevesText,
-    pageName: "",
+    pageName: "colin",
   }, {
     title: "Earthworks",
     text: earthworksText,
-    pageName: "",
+    pageName: "earthworks",
   }];
 
   return (

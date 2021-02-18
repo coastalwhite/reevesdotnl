@@ -73,13 +73,13 @@ class Menu extends React.Component<
     return (
       <Box>
         <Box>
-          <Card maxW="100vw" p="auto">
+          <Card maxW="100vw" p={["0", "auto", "auto"]}>
             <Box w={containerWidths} mx="auto">
               <Image
                 h="32"
                 maxW="100%"
                 px="2"
-                mx={["auto", "unset"]}
+                mx={["auto", "auto", "0"]}
                 src="/assets/img/logo-earthworks.jpg"
                 alt="Logo Earthworks"
               />
@@ -89,19 +89,17 @@ class Menu extends React.Component<
         <Flex
           mx="auto"
           w={containerWidths}
-          direction={["column", "row"]}
+          direction={["column", "column", "row"]}
           justifyContent="space-between"
           fontFamily="header"
           maxW="100%"
-          // TODO: Remove this overflow
-          overflowX="hidden"
         >
           <Card
             onClick={this.handleDrawerClick}
-            display={["block", "none"]}
+            display={["block", "block", "none"]}
           >
             <Center
-              w={["100%", "auto"]}
+              w={["100%", "100%", "auto"]}
             >
               <Image src="/assets/svg/drawer.svg" h="8" alt="Show/Hide Menu" />
             </Center>
