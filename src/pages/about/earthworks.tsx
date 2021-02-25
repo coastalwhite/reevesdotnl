@@ -6,7 +6,7 @@ import { Image, Link } from "@chakra-ui/react";
 
 const AboutEarthworksPage = () => {
   return (
-    <PDFViewLayout pageName="about" pageTitle="About Earthworks">
+    <PDFViewLayout pageName="about" pageTitle="Earthworks">
       <TwoArticleColumns>
         <Paragraph heading="The scientific basis of resource exploration">
           Systematic resource exploration starts with geological reconnaissance.
