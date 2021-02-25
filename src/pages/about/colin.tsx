@@ -6,7 +6,7 @@ import { Image, Link } from "@chakra-ui/react";
 
 const AboutColinPage = () => {
   return (
-    <PDFViewLayout pageName="about" pageTitle="About Colin Reeves">
+    <PDFViewLayout pageName="about" pageTitle="Colin Reeves">
       <TwoArticleColumns>
         <Paragraph heading="Short curriculum vitae">
           <Image
