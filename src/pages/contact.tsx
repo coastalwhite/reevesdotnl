@@ -31,7 +31,7 @@ const ContactPage = () => {
     lines: ["Achterom 41a", "2611 PL Delft", "The Netherlands"],
   }, {
     title: "Visiting Address",
-    lines: ["Lange Geer 44A", "2611 PW Delft", "The Netherlands"],
+    lines: ["Lange Geer 44a", "2611 PW Delft", "The Netherlands"],
   }, {
     title: "Mobile Phone",
     lines: ["+31 611 35 62 72"],
