@@ -7,7 +7,7 @@ const text = 'Colin Reeves is an earth scientist specialised in geophysical mapp
 
 const ShortAboutCard = () => {
   return (
-    <TitledCard title="About Colin Reeves">
+    <TitledCard title="Colin Reeves">
       <Flex direction="row">
         <Center w="32" mr="4">
           <Image

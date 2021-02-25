@@ -1,7 +1,6 @@
 import * as React from "react";
-import { Box, Center, Flex, Heading } from "@chakra-ui/react";
+import { Box, Center, Flex, Heading, Image } from "@chakra-ui/react";
 import Card from "../card";
-import LoadedImage from "../loaded-image";
 
 interface CoverImageCardProps {
   title?: string;
@@ -25,7 +24,7 @@ const CoverImageCard = (props: CoverImageCardProps) => {
           </Box>}
         <Box color="contentcolor">
           <Center>
-            <LoadedImage
+            <Image
               src={props.src}
               alt={props.alt}
               width={["100%", "max(30vh, 100%)"]}
