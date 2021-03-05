@@ -1,8 +1,6 @@
 import * as React from "react";
-import Base from "../components/base";
 
-import { Box, Flex, Link, Table, Tbody, Td, Tr } from "@chakra-ui/react";
-import SideImagesCard from "../components/cards/side-images-card";
+import { Box, Link, Table, Tbody, Td, Tr } from "@chakra-ui/react";
 import Card from "../components/card";
 import SidePicturedLayout from "../components/layouts/side-pictured";
 
@@ -17,9 +15,9 @@ const Section = (
       <Td>
         {props.href
           ? <Link href={props.href} color="refcolor">
-            {props.lines.map((line) => <Box>{line}</Box>)}
+            {props.lines.map((line, index) => <Box key={index}>{line}</Box>)}
           </Link>
-          : props.lines.map((line) => <Box>{line}</Box>)}
+          : props.lines.map((line, index) => <Box key={index}>{line}</Box>)}
       </Td>
     </Tr>
   );
@@ -57,7 +55,9 @@ const ContactPage = () => {
       <Card w="100%">
         <Table w="100%" variant="simple">
           <Tbody>
-            {sections.map((section) => <Section {...section} />)}
+            {sections.map((section, index) =>
+              <Section key={index} {...section} />
+            )}
           </Tbody>
         </Table>
       </Card>

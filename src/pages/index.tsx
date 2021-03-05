@@ -1,7 +1,7 @@
 import { Box, Flex } from "@chakra-ui/react";
 import * as React from "react";
+import LatestUpdateCard from "../components/cards/latest-update";
 import ShortAboutCard from "../components/cards/short-about";
-import TitledCard from "../components/cards/titled-card";
 import CoverImageLayout from "../components/layouts/cover-image";
 
 const IndexPage = () => {
@@ -16,9 +16,7 @@ const IndexPage = () => {
           <ShortAboutCard />
         </Box>
         <Box>
-          <TitledCard title="Latest Update">
-            This is the latest update...
-          </TitledCard>
+          <LatestUpdateCard />
         </Box>
       </Flex>
     </CoverImageLayout>

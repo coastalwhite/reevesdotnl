@@ -15,9 +15,7 @@ const CategoryCard = (
     <Box flex="1" mb="4">
       <TitledCard title={props.title}>
         <Box>{props.text}</Box>
-        <GatsbyLink to="pageName">
-          <Link color="refcolor"></Link>
-        </GatsbyLink>
+        <Link color="refcolor" href={props.pageName}>Read more...</Link>
       </TitledCard>
     </Box>
   );
@@ -50,7 +48,9 @@ const PublicationsPage = () => {
       coverImgAlt="Gondwana"
     >
       <Flex direction="column">
-        {categories.map((category) => <CategoryCard {...category} />)}
+        {categories.map((category, index) =>
+          <CategoryCard key={index} {...category} />
+        )}
       </Flex>
     </CoverImageLayout>
   );

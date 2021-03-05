@@ -16,21 +16,25 @@ const SideImagesCard = (props: SideImagesCardProps) => {
   return (
     <Card w="100%">
       <Flex direction="column">
-          { props.title &&
-            <Box
-              w="100%"
-              borderBottomColor="seperatorcolor"
-              borderBottomWidth="thin"
-              mb="4"
-            >
-              <Heading fontFamily="heading" size="lg">
-                {props.title}
-              </Heading>
-            </Box>
-        }
+        {props.title &&
+          <Box
+            w="100%"
+            borderBottomColor="seperatorcolor"
+            borderBottomWidth="thin"
+            mb="4"
+          >
+            <Heading fontFamily="heading" size="lg">
+              {props.title}
+            </Heading>
+          </Box>}
         <Box>
-          {props.images.map((image) =>
-            <Image src={"/assets/" + image.src} alt={image.alt} mb="4" />
+          {props.images.map((image, index) =>
+            <Image
+              key={index}
+              src={"/assets/" + image.src}
+              alt={image.alt}
+              mb="4"
+            />
           )}
         </Box>
       </Flex>

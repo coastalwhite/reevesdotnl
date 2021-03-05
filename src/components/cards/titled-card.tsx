@@ -5,7 +5,7 @@ import { Box, Flex, Heading } from "@chakra-ui/react";
 
 interface TitledCardProps {
   title: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 const TitledCard = (props: TitledCardProps) => {
