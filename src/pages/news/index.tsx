@@ -6,80 +6,77 @@ import TitledCard from "../../components/cards/titled-card";
 import SidePicturedLayout from "../../components/layouts/side-pictured";
 
 const ArticlePreview = (
-  props: { title: string; html: string; pageName: string },
+    props: { title: string; html: string; pageName: string },
 ) => {
-  return (
-    <Box w="100%" mb="4">
-      <TitledCard title={props.title}>
-        <Box dangerouslySetInnerHTML={{ __html: props.html }} />
-        <Box>
-          <Link color="refcolor" href={props.pageName}>
-            Read more...
+    return (
+        <Box w="100%" mb="4">
+            <TitledCard title={props.title}>
+                <Box dangerouslySetInnerHTML={{ __html: props.html }} />
+                <Box>
+                    <Link color="refcolor" href={"/" + props.pageName}>
+                        Read more...
           </Link>
+                </Box>
+            </TitledCard>
         </Box>
-      </TitledCard>
-    </Box>
-  );
+    );
 };
 
 const NewsPage = (props: { data: QueryReturnType }) => {
-  const articles = props.data.allMarkdownRemark.edges.map((x) => x.node).filter(
-    (
-      { fileAbsolutePath },
-    ) => fileAbsolutePath.match(/news\//),
-  ).map(({ html, frontmatter: fm }) => ({
-    html,
-    title: fm.title,
-    pageName: fm.readmore_uri,
-  }));
+    const articles = props.data.allMdx.edges.map((x) => x.node)
+        .sort(({ frontmatter: a }, { frontmatter: b }) => (a.date == b.date ? 0 : (a.date < b.date ? 1 : -1))).map(({ excerpt, slug, frontmatter: fm }) => ({
+            html: excerpt,
+            title: fm.title,
+            pageName: slug,
+        }));
 
-  return (
-    <SidePicturedLayout
-      pageName="news"
-      pageTitle="News"
-      images={[{ src: "img/news.jpg", alt: "news" }, {
-        src: "img/animation.gif",
-        alt: "animation",
-      }]}
-    >
-      <Flex direction="column" flex="1">
-        {articles.map((article, index) =>
-          <ArticlePreview key={index} {...article} />
-        )}
-      </Flex>
-    </SidePicturedLayout>
-  );
+    return (
+        <SidePicturedLayout
+            pageName="news"
+            pageTitle="News"
+            images={[{ src: "img/news.jpg", alt: "news" }, {
+                src: "img/animation.gif",
+                alt: "animation",
+            }]}
+        >
+            <Flex direction="column" flex="1">
+                {articles.map((article, index) =>
+                    <ArticlePreview key={index} {...article} />
+                )}
+            </Flex>
+        </SidePicturedLayout>
+    );
 };
 
 type QueryReturnType = {
-  allMarkdownRemark: {
-    edges: {
-      node: {
-        html: string;
-        frontmatter: {
-          title: string;
-          readmore_uri: string;
-        };
-        fileAbsolutePath: string;
-      };
-    }[];
-  };
+    allMdx: {
+        edges: {
+            node: {
+                excerpt: string;
+                slug: string;
+                frontmatter: {
+                    date: string;
+                    title: string;
+                };
+            };
+        }[];
+    };
 };
 
 export const query = graphql`
     query NewsArticles {
-        allMarkdownRemark {
+        allMdx(filter: {slug: {regex: "/news/"}}) {
             edges {
-                node {
-                    html
-                    frontmatter {
-                        title
-                        readmore_uri
-                    }
-                    fileAbsolutePath
+              node {
+                frontmatter {
+                  title
+                  date
                 }
+                excerpt(pruneLength: 400)
+                slug
+              }
             }
-        }
+          }
     }
 `;
 
