@@ -57,6 +57,8 @@ const Reference = (props) => <div><Text fontStyle="italic">{props.children} {pro
 const Italic = (props) => <Text fontStyle="italic">{props.children}</Text>;
 const Bold = (props) => <Text fontWeight="bold">{props.children}</Text>;
 
+const BlockQuote = (props) => <Box w="full" p="4" bg="bgcolor" color="#555" my="4">{props.children}</Box>;
+
 interface BannerData {
     allFile: {
         edges: {
@@ -95,6 +97,7 @@ const PDFViewLayout = (data: PDFViewLayoutProps) => {
         h1: Header1,
         i: Italic,
         b: Bold,
+        blockquote: BlockQuote,
     };
     return (
         <Base pageName={linked}>
