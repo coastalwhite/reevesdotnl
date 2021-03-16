@@ -74,7 +74,7 @@ const PDFViewLayout = (data: PDFViewLayoutProps) => {
     const { children, pageContext, path } = data;
     const bannerData: BannerData = useStaticQuery(graphql`
         {
-          allFile(filter: { absolutePath: {regex: "images/news/banners/"} }) {
+          allFile(filter: { absolutePath: {regex: "banners/"} }) {
             edges {
               node {
                 publicURL
