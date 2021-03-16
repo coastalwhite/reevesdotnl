@@ -35,9 +35,8 @@ const MONTHS = [
 
 const PublishDate = (date) => {
     const dateParsed = new Date(date);
-    const dateString = `${dateParsed.getFullYear()} ${MONTHS[dateParsed.getMonth()]} ${dateParsed.getDate()}`;
-
     return (props) => {
+        const dateString = `${dateParsed.getFullYear()} ${MONTHS[dateParsed.getMonth()]}${!props.noday ? ' ' + dateParsed.getDate() : ''}`;
         let updatedString = ''
         if (props.updated !== undefined) {
             const updatedParsed = new Date(props.updated);
@@ -45,14 +44,16 @@ const PublishDate = (date) => {
         }
 
         return (<Text fontStyle="italic">
+            {props.prepend || ""}
             {dateString}{updatedString}
+            {props.append || ""}
         </Text>);
     };
 }
 
 const PDFLink = (props) => <Link color="refcolor" href={props.href}>{props.children}</Link>;
 const Header1 = (props) => <Heading as="h1" size="sm" mt="4">{props.children}</Heading>;
-const Reference = (props) => <div><Text fontStyle="italic">{props.children}</Text></div>
+const Reference = (props) => <div><Text fontStyle="italic">{props.children} {props.link && <PDFLink href={props.link}>{props.link}</PDFLink>}</Text></div>
 const Italic = (props) => <Text fontStyle="italic">{props.children}</Text>;
 const Bold = (props) => <Text fontWeight="bold">{props.children}</Text>;
 
