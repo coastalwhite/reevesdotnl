@@ -2,5 +2,8 @@
 title: "Latest Update"
 ---
 
-This is a cool latest update.
+# New website!
+
+The website has been fixed and updated. Hopefully it looks good and may everyone
+enjoy!
 

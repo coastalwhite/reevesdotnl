@@ -29,6 +29,14 @@ module.exports = {
         ignore : [ "**/\.*" ]
       }
     },
+    {
+      resolve : "gatsby-source-filesystem",
+      options : {
+        name : 'assets',
+        path : `${__dirname}/src/assets/`,
+        ignore : [ "**/\.*" ]
+      }
+    },
     'gatsby-plugin-sharp', {
       resolve : 'gatsby-transformer-remark',
       options : {
