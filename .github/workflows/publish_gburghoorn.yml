@@ -19,12 +19,14 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - uses: borales/actions-yarn@v2.0.0
+      - name: Install
+        uses: CultureHQ/actions-yarn@master
         with:
-          cmd: install # will run `yarn install` command
-      - uses: borales/actions-yarn@v2.0.0
+          args: install
+      - name: Lint
+        uses: CultureHQ/actions-yarn@master
         with:
-          cmd: build # will run `yarn build` command
+          args: build
 
       - name: Copy Files to Server
         uses: appleboy/scp-action@master
