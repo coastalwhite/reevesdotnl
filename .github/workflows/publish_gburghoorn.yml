@@ -19,14 +19,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: Install
-        uses: CultureHQ/actions-yarn@master
+      - uses: actions/setup-node@v2
         with:
-          args: install
-      - name: Lint
-        uses: CultureHQ/actions-yarn@master
-        with:
-          args: build
+          node-version: '14'
+      - run: npm install
+      - run: npm run build
 
       - name: Copy Files to Server
         uses: appleboy/scp-action@master
