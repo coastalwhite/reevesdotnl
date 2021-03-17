@@ -24,6 +24,7 @@ jobs:
           node-version: '14'
       - run: npm install
       - run: npm run build
+      - run: cd public
 
       - name: Copy Files to Server
         uses: appleboy/scp-action@master
@@ -33,5 +34,5 @@ jobs:
           port: ${{ secrets.SCP_PORT }}
           key: ${{ secrets.SCP_KEY }}
           passphrase: ${{ secrets.SCP_SSH_PW }}
-          source: "public/*"
+          source: "*"
           target: "/var/www/reeves"
