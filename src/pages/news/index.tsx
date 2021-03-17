@@ -13,7 +13,7 @@ const ArticlePreview = (
             <TitledCard title={props.title}>
                 <Box dangerouslySetInnerHTML={{ __html: props.html }} />
                 <Box>
-                    <Link color="refcolor" href={"./" + props.pageName}>
+                    <Link color="refcolor" href={props.pageName}>
                         Read more...
           </Link>
                 </Box>
@@ -27,7 +27,7 @@ const NewsPage = (props: { data: QueryReturnType }) => {
         .sort(({ frontmatter: a }, { frontmatter: b }) => (a.date == b.date ? 0 : (a.date < b.date ? 1 : -1))).map(({ excerpt, slug, frontmatter: fm }) => ({
             html: excerpt,
             title: fm.title,
-            pageName: slug.substring(slug.lastIndexOf('/') + 1),
+            pageName: slug,
         }));
 
     return (

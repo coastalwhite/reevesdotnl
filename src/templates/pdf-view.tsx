@@ -89,7 +89,8 @@ const PDFViewLayout = (data: PDFViewLayoutProps) => {
 
     const bannerNode = bannerData.allFile.edges.map(x => x.node).filter(x => x.absolutePath.includes("banners")).find(x => path.includes(x.name));
 
-    const linked = path.substr(1, path.substr(1).indexOf('/')) as LinkName;
+    const folders = path.split('/');
+    const linked = folders[folders.length - 2] as LinkName;
     const { title, date } = pageContext.frontmatter;
     const components = {
         PublishDate: PublishDate(date),
