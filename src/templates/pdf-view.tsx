@@ -65,6 +65,7 @@ interface BannerData {
             node: {
                 publicURL: string;
                 name: string;
+                absolutePath: string;
             }
         }[]
     }
@@ -74,9 +75,10 @@ const PDFViewLayout = (data: PDFViewLayoutProps) => {
     const { children, pageContext, path } = data;
     const bannerData: BannerData = useStaticQuery(graphql`
         {
-          allFile(filter: { absolutePath: {regex: "banners/"} }) {
+          allFile {
             edges {
               node {
+                absolutePath
                 publicURL
                 name
               }
@@ -85,7 +87,7 @@ const PDFViewLayout = (data: PDFViewLayoutProps) => {
         }
     `);
 
-    const bannerNode = bannerData.allFile.edges.map(x => x.node).find(x => path.includes(x.name));
+    const bannerNode = bannerData.allFile.edges.map(x => x.node).filter(x => x.absolutePath.includes("banners")).find(x => path.includes(x.name));
 
     const linked = path.substr(1, path.substr(1).indexOf('/')) as LinkName;
     const { title, date } = pageContext.frontmatter;
