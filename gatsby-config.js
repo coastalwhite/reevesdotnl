@@ -4,7 +4,8 @@ module.exports = {
     title : "reevesdotnl-gatsby",
   },
   plugins : [
-    "gatsby-plugin-react-helmet", {
+    "gatsby-plugin-sharp", "gatsby-remark-images", "gatsby-plugin-react-helmet",
+    {
       resolve : "gatsby-plugin-manifest",
       options : {
         icon : "src/images/icon.png",
@@ -53,7 +54,13 @@ module.exports = {
       options : {
         defaultLayouts : {
           default : require.resolve("./src/templates/pdf-view.tsx"),
-        }
+        },
+        gatsbyRemarkPlugins : [ {
+          resolve : 'gatsby-remark-images',
+          options : {
+            maxWidth : 1200,
+          }
+        } ]
       }
     }
   ],
