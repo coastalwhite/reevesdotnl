@@ -4,8 +4,7 @@ module.exports = {
     title : "reevesdotnl-gatsby",
   },
   plugins : [
-    "gatsby-plugin-sharp", "gatsby-remark-images", "gatsby-plugin-react-helmet",
-    {
+    "gatsby-plugin-sharp", "gatsby-plugin-react-helmet", {
       resolve : "@chakra-ui/gatsby-plugin",
       options : {
         isResettingCSS : true,
@@ -36,10 +35,8 @@ module.exports = {
       resolve : 'gatsby-transformer-remark',
       options : {
         plugins : [ {
-          resolve : 'gatsby-remark-images',
-          options : {
-            maxWidth : 640,
-          }
+          resolve : `gatsby-remark-copy-linked-files`,
+          options : {ignoreFileExtensions : []}
         } ]
       }
     },
@@ -50,9 +47,9 @@ module.exports = {
           default : require.resolve("./src/templates/pdf-view.tsx"),
         },
         gatsbyRemarkPlugins : [ {
-          resolve : 'gatsby-remark-images',
+          resolve : 'gatsby-remark-copy-linked-files',
           options : {
-            maxWidth : 1200,
+            ignoreFileExtensions : [],
           }
         } ]
       }

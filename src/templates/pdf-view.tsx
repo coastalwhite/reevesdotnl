@@ -1,7 +1,7 @@
 import { Box, Link, Text, Heading, Image } from "@chakra-ui/react";
 import { MDXProvider } from "@mdx-js/react";
 import { graphql, useStaticQuery } from "gatsby";
-import React from "react";
+import React, { ElementType } from "react";
 import Base from "../components/base";
 import TitledCard from "../components/cards/titled-card";
 import { LinkName } from "../components/menu";
@@ -51,13 +51,15 @@ const PublishDate = (date) => {
     };
 }
 
+const Header = (as: ElementType<any>, size: string) => (props) => <Heading as={as} size={size} mt="4">{props.children}</Heading>;
+
 const PDFLink = (props) => <Link color="refcolor" href={props.href}>{props.children}</Link>;
-const Header1 = (props) => <Heading as="h1" size="sm" mt="4">{props.children}</Heading>;
 const Reference = (props) => <div><Text fontStyle="italic">{props.children} {props.link && <PDFLink href={props.link}>{props.link}</PDFLink>}</Text></div>
 const Italic = (props) => <Text fontStyle="italic">{props.children}</Text>;
 const Bold = (props) => <Text fontWeight="bold">{props.children}</Text>;
 
 const BlockQuote = (props) => <Box w="full" p="4" bg="bgcolor" color="#555" my="4">{props.children}</Box>;
+const Img = (props) => <Image mx="auto" src={props.src} alt={props.alt} maxW="640px" />;
 
 interface BannerData {
     allFile: {
@@ -97,7 +99,11 @@ const PDFViewLayout = (data: PDFViewLayoutProps) => {
         Reference,
         p: Paragraph,
         a: PDFLink,
-        h1: Header1,
+        h1: Header('h1', 'xl'),
+        h2: Header('h2', 'lg'),
+        h3: Header('h3', 'base'),
+        h4: Header('h4', 'sm'),
+        img: Img,
         i: Italic,
         b: Bold,
         blockquote: BlockQuote,
