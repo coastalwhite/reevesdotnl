@@ -1,6 +1,6 @@
 ---
 title: "Colin Reeves"
-readmore_uri: "/"
+readmore_uri: "/about/colin"
 ---
 
 Colin Reeves is an earth scientist specialised in geophysical mapping. In a

@@ -1,6 +1,6 @@
 ---
 title: "Earthworks"
-readmore_uri: "/"
+readmore_uri: "/about/earthworks"
 ---
 
 Earthworks was founded in 2001 as a vehicle for Colin’s consulting activities.
