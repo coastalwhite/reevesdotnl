@@ -1,7 +1,18 @@
 module.exports = {
   pathPrefix : "/reevesdotnl",
   siteMetadata : {
-    title : "reevesdotnl-gatsby",
+    title : "Reeves.nl",
+    siteUrl: "http://www.reeves.nl/",
+    author : "Colin Reeves",
+    keywords : [
+      "Geophysics", "Geological mapping", "Southern continents", "Gondwana",
+      "Geodynamics", "Aeromagnetic surveys", "Geophysical interpretation",
+      "Ocean-floor topography", "Paleogeographic reconstructions",
+      "Africa, India, Australia, Antarctica, South America",
+      "Cretaceous period", "Jurassic period", "Continental margins", "Rifts",
+      "Mid-ocean ridges", "Dyke swarms", "Large igneous provinces",
+      "Precambrian terranes"
+    ]
   },
   plugins : [
     "gatsby-plugin-sharp", "gatsby-plugin-react-helmet", {

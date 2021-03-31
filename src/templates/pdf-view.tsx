@@ -6,6 +6,7 @@ import Base from "../components/base";
 import TitledCard from "../components/cards/titled-card";
 import { LinkName } from "../components/menu";
 import Paragraph from "../components/paragraph";
+import { Helmet } from 'react-helmet';
 
 interface PDFViewLayoutProps {
     children?: React.ReactNode;
@@ -110,6 +111,11 @@ const PDFViewLayout = (data: PDFViewLayoutProps) => {
     };
     return (
         <Base pageName={linked}>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>{title}</title>
+                <link rel="canonical" href="http://reeves.nl/" />
+            </Helmet>
             <Box w="100%">
                 <TitledCard title={title}>
                     <MDXProvider components={components}>
