@@ -45,8 +45,8 @@ const GondwanaPage = () => {
                         text="Selected animations"
                     />
                     <RelatedLink to="/gondwana/updates" text="Research updates" />
-                    <RelatedLink to="/gondwana" text="Twelve lectures" />
-                    <RelatedLink to="/gondwana" text="Other material" />
+                    <RelatedLink to="/gondwana/twelve-lectures" text="Twelve lectures" />
+                    <RelatedLink to="/gondwana/other-material" text="Other material" />
                 </TitledCard>
             </CoverImageLayout>
         )
