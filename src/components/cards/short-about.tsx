@@ -27,22 +27,22 @@ const ShortAboutCard = () => {
     return LoadWithMD<FrontmatterProps>(
         "short-about.md",
         (html, fm) => (<TitledCard title={fm.title}>
-            <Flex direction="row">
-                <Center w="32" mr="4">
+            <Flex direction={["column", "row"]}>
+                <Center w={["100%", "32"]} mr={["0", "4"]} mb={["4", "0"]}>
                     <Image
                         src={mugshotData.allFile.edges[0].node.publicURL}
                         alt={fm.image_alt}
-                        w="100%"
+                        w={["32", "100%"]}
                     />
                 </Center>
-                <Box flex="1">
+                <Box flex="1" >
                     <Box dangerouslySetInnerHTML={{ __html: html }} />
                     <Link color="refcolor" href={fm.readmore_uri}>
                         Read more...
           </Link>
                 </Box>
             </Flex>
-        </TitledCard>),
+        </TitledCard >),
     );
 }
 

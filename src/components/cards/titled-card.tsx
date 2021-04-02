@@ -11,7 +11,7 @@ interface TitledCardProps {
 const TitledCard = (props: TitledCardProps) => {
     return (
         <Card w="100%" h="100%">
-            <Flex direction="column">
+            <Flex direction="column" maxW="100%">
                 <Box
                     w="100%"
                     borderBottomColor="seperatorcolor"
@@ -22,7 +22,7 @@ const TitledCard = (props: TitledCardProps) => {
                         {props.title}
                     </Heading>
                 </Box>
-                <Box color="contentcolor">
+                <Box color="contentcolor" maxW="100%">
                     {props.children}
                 </Box>
             </Flex>

@@ -11,7 +11,7 @@ const IndexPage = () => {
             coverImgSrc="/assets/img/homepage.gif"
             coverImgAlt="Gondwana"
         >
-            <Flex direction="column">
+            <Flex direction="column" maxW="100vw">
                 <Box mb="4">
                     <ShortAboutCard />
                 </Box>

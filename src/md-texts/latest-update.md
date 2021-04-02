@@ -1,9 +1,8 @@
 ---
-title: "Latest Update"
+title: "Earthworks celebrates 20 years"
+readmore_uri: "./news"
 ---
 
-# New website!
-
-The website has been fixed and updated. Hopefully it looks good and may everyone
-enjoy! Text!
-
+We mark 20 years of Earthworks with the launch of our new website. We hope to
+keep you better informed of the latest Gondwana research with its text, graphics
+and animations.
