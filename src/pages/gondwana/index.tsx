@@ -41,12 +41,12 @@ const GondwanaPage = () => {
                         text="Principles of global tectonics"
                     />
                     <RelatedLink
-                        to="animations"
+                        to="gondwana/animations"
                         text="Selected animations"
                     />
-                    <RelatedLink to="updates" text="Research updates" />
-                    <RelatedLink to="twelve-lectures" text="Twelve lectures" />
-                    <RelatedLink to="other-material" text="Other material" />
+                    <RelatedLink to="gondwana/updates" text="Research updates" />
+                    <RelatedLink to="gondwana/twelve-lectures" text="Twelve lectures" />
+                    <RelatedLink to="gondwana/other-material" text="Other material" />
                 </TitledCard>
             </CoverImageLayout>
         )
