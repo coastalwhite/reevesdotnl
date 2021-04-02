@@ -120,7 +120,9 @@ const PDFViewLayout = (data: PDFViewLayoutProps) => {
                 <TitledCard title={title}>
                     <MDXProvider components={components}>
                         {bannerNode && <Image src={bannerNode.publicURL} mx="auto" />}
-                        {children}
+                        <Box mx="auto" maxW="xl" fontSize="lg">
+                            {children}
+                        </Box>
                     </MDXProvider>
                 </TitledCard>
             </Box>
