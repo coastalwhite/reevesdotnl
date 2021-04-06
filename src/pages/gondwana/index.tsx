@@ -33,21 +33,23 @@ const GondwanaPage = () => {
                 coverImgSrc="/assets/img/gondwana.gif"
                 coverImgAlt="Gondwana"
             >
-                <TitledCard title={fm.title}>
-                    <Text mb="4" dangerouslySetInnerHTML={{ __html: html }} />
+                <Box maxW="100vw">
+                    <TitledCard title={fm.title}>
+                        <Text mb="4" dangerouslySetInnerHTML={{ __html: html }} />
 
-                    <RelatedLink
-                        to={principles.publicURL}
-                        text="Principles of global tectonics"
-                    />
-                    <RelatedLink
-                        to="gondwana/animations"
-                        text="Selected animations"
-                    />
-                    <RelatedLink to="gondwana/updates" text="Research updates" />
-                    <RelatedLink to="gondwana/twelve-lectures" text="Twelve lectures" />
-                    <RelatedLink to="gondwana/other-material" text="Other material" />
-                </TitledCard>
+                        <RelatedLink
+                            to={principles.publicURL}
+                            text="Principles of global tectonics"
+                        />
+                        <RelatedLink
+                            to="gondwana/animations"
+                            text="Selected animations"
+                        />
+                        <RelatedLink to="gondwana/updates" text="Research updates" />
+                        <RelatedLink to="gondwana/twelve-lectures" text="Twelve lectures" />
+                        <RelatedLink to="gondwana/other-material" text="Other material" />
+                    </TitledCard>
+                </Box>
             </CoverImageLayout>
         )
     ));

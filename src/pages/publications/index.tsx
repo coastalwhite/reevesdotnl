@@ -47,7 +47,7 @@ const PublicationsPage = () => {
             coverImgSrc="/assets/img/publications.png"
             coverImgAlt="Gondwana"
         >
-            <Flex direction="column">
+            <Flex direction="column" maxW="100vw">
                 {categories.map((category, index) =>
                     <CategoryCard key={index} {...category} />
                 )}
