@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import { Box, Flex, Link } from "@chakra-ui/react";
-import { graphql } from "gatsby";
+import { graphql, Link as GatsbyLink } from "gatsby";
 import TitledCard from "../../components/cards/titled-card";
 import SidePicturedLayout from "../../components/layouts/side-pictured";
 
@@ -15,9 +15,9 @@ const ArticlePreview = (props: {
       <TitledCard title={props.title}>
         <Box dangerouslySetInnerHTML={{ __html: props.html }} />
         <Box>
-          <Link color="refcolor" href={"news/" + props.pageName}>
-            Read more...
-          </Link>
+          <GatsbyLink to={props.pageName}>
+            <Link color="refcolor">Read more...</Link>
+          </GatsbyLink>
         </Box>
       </TitledCard>
     </Box>
