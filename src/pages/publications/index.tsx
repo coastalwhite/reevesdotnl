@@ -15,7 +15,7 @@ const CategoryCard = (
         <Box flex="1" mb="4">
             <TitledCard title={props.title}>
                 <Box>{props.text}</Box>
-                <Link color="refcolor" href={props.pageName}>Read more...</Link>
+                <Link color="refcolor"><GatsbyLink to={props.pageName}>Read more...</GatsbyLink></Link>
             </TitledCard>
         </Box>
     );
@@ -26,18 +26,18 @@ const PublicationsPage = () => {
         {
             title: "Key Publications",
             text: "An introduction to the publications that stood the test of time",
-            pageName: "/publications/key-publications",
+            pageName: "key-publications",
         },
         {
             title: "Comprehensive List",
             text: "A full list of publications since 1970.",
-            pageName: "/publications/comprehensive-list",
+            pageName: "comprehensive-list",
         },
         {
             title: "Gondwana publications",
             text:
                 "A list of publications relevant to Gondwana research, including the work of students and their theses.",
-            pageName: "/publications/gondwana-publications",
+            pageName: "gondwana-publications",
         },
     ];
     return (
