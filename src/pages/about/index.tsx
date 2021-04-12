@@ -11,7 +11,7 @@ const Section = (props: { title: string; html: string; pageName: string }) => {
       <TitledCard title={props.title}>
         <Box dangerouslySetInnerHTML={{ __html: props.html }} />
         <Box>
-          <Link color="refcolor" href={"." + props.pageName}>
+            <Link color="refcolor" href={"about/" + props.pageName}>
             Read more...
           </Link>
         </Box>
