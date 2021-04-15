@@ -60,7 +60,7 @@ const Italic = (props) => <Text fontStyle="italic">{props.children}</Text>;
 const Bold = (props) => <Text fontWeight="bold">{props.children}</Text>;
 
 const BlockQuote = (props) => <Box w="full" p="4" bg="bgcolor" color="#555" my="4">{props.children}</Box>;
-const Img = (props) => <Image mx="auto" src={props.src} alt={props.alt} maxW="640px" />;
+const Img = (props) => <Image mx="auto" src={props.src} alt={props.alt} maxW={["100%", "100%", "640px"]} />;
 
 interface BannerData {
     allFile: {
