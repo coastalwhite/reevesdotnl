@@ -1,5 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import * as React from 'react';
+import { Box } from "@chakra-ui/react";
 
 const BuildDate = () => {
     const dateTime = new Date(useStaticQuery(graphql`
@@ -9,9 +10,10 @@ const BuildDate = () => {
       }
     }
     `).site.buildTime).toLocaleString();
-    return <div>
-        {dateTime}
-    </div>
+    return <Box m="4">
+        <b>Last update at:</b><br />
+        <i>{dateTime}</i>
+    </Box>
 };
 
 export default BuildDate;
