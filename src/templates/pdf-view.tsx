@@ -1,4 +1,5 @@
 import { Box, Link, Text, Heading, Image } from "@chakra-ui/react";
+import { Link as GatsbyLink } from "gatsby";
 import { MDXProvider } from "@mdx-js/react";
 import { graphql, useStaticQuery } from "gatsby";
 import React, { ElementType } from "react";
@@ -54,7 +55,7 @@ const PublishDate = (date) => {
 
 const Header = (as: ElementType<any>, size: string) => (props) => <Heading as={as} size={size} mt="4">{props.children}</Heading>;
 
-const PDFLink = (props) => <Link color="refcolor" href={props.href}>{props.children}</Link>;
+const PDFLink = (props) => <GatsbyLink to={props.href}><Link color="refcolor">{props.children}</Link></GatsbyLink>;
 const Reference = (props) => <div><Text fontStyle="italic">{props.children} {props.link && <PDFLink href={props.link}>{props.link}</PDFLink>}</Text></div>
 const Italic = (props) => <Text fontStyle="italic">{props.children}</Text>;
 const Bold = (props) => <Text fontWeight="bold">{props.children}</Text>;
