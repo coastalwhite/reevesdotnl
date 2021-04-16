@@ -9,7 +9,7 @@ const BuildDate = () => {
         buildTime
       }
     }
-    `).site.buildTime).toLocaleString();
+    `).site.buildTime).toLocaleString("en-GB", { timeZone: "CET" });
     return <Box m="4">
         <b>Last update at:</b><br />
         <i>{dateTime}</i>
