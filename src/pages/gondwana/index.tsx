@@ -40,6 +40,7 @@ const GondwanaPage = () => {
                         <RelatedLink
                             to={principles.publicURL}
                             text="Principles of global tectonics"
+                            absoluteUrl
                         />
                         <RelatedLink
                             to="animations"
