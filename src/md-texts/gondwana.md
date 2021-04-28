@@ -1,5 +1,5 @@
 ---
-title: "Links"
+title: "A plate tectonics primer"
 animation_path: "img/gondwana.gif"
 animation_alt: "Gondwana"
 ---
