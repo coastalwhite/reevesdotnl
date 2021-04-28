@@ -35,7 +35,7 @@ const GondwanaPage = () => {
             >
                 <Box maxW="100vw">
                     <TitledCard title={fm.title}>
-                        <Text mb="4" dangerouslySetInnerHTML={{ __html: html }} />
+                        <Box mb="4" dangerouslySetInnerHTML={{ __html: html }} />
 
                         <RelatedLink
                             to={principles.publicURL}
