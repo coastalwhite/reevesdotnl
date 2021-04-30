@@ -1,0 +1,26 @@
+name: Publish to reeves.nl
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Publish to reeves.nl
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run: npm install
+      - run: npm run build
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+            server: ${{ secrets.ftp_host }}
+            username: ${{ secrets.ftp_user }}
+            password: ${{ secrets.ftp_password }}
+            local-dir: './public/',
+            server-dir: 'public_html/',
