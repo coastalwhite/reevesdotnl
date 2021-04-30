@@ -14,6 +14,11 @@ jobs:
       - run: npm install
       - run: npm run build
 
+      - run: rm -f ./public/**/*.js.map
+      - run: rm -f ./public/**/*.mdx
+      - run: rm -f ./public/**/*.md
+      - run: rm -f ./public/**/*.tsx
+
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
