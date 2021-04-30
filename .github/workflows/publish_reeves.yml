@@ -1,8 +1,6 @@
 name: Publish to reeves.nl
-
 on:
   workflow_dispatch:
-
 jobs:
   build:
     name: Publish to reeves.nl
