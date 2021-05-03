@@ -7,7 +7,7 @@ animation_alt: "Gondwana"
 How did Gondwana break up exactly? 
 
 
-* [Principles of global tectonics](http://www.reeves.nl/upload/principles-of-global.pdf)
+> [Principles of global tectonics](http://www.reeves.nl/upload/principles-of-global.pdf)
 
 
 
