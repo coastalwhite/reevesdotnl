@@ -4,9 +4,11 @@ animation_path: "img/gondwana.gif"
 animation_alt: "Gondwana"
 ---
 
-How did Gondwana break up exactly?  
+How did Gondwana break up exactly? 
 
-* [Principles of global tectonics](../../gondwana/principles of global.pdf)
+
+* [Principles of global tectonics](http://www.reeves.nl/upload/principles-of-global.pdf)
+
 
 
 The southern continents – more than half the
