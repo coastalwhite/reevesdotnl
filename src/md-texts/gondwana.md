@@ -4,7 +4,12 @@ animation_path: "img/gondwana.gif"
 animation_alt: "Gondwana"
 ---
 
-How did Gondwana break up exactly?  The southern continents – more than half the
+How did Gondwana break up exactly?  
+
+* [Principles of global tectonics](../../gondwana/principles of global.pdf)
+
+
+The southern continents – more than half the
 world’s land area – share much geological and tectonic history.  The formation
 of Gondwana as a ‘supercontinent’ was completed at the start of Phanerozoic
 times, about 540 million years ago (540 Ma). It remained intact as a single
