@@ -35,10 +35,8 @@ const GondwanaPage = () => {
             >
                 <Box maxW="100vw">
                     <TitledCard title={fm.title}>
-                        <Box mb="4" dangerouslySetInnerHTML={{ __html: html }} />
-
                         <RelatedLink
-                            to={principles.publicURL}
+                            to="http://www.reeves.nl/upload/principles-of-global-large.pdf"
                             text="Principles of global tectonics"
                             absoluteUrl
                         />
@@ -49,6 +47,8 @@ const GondwanaPage = () => {
                         <RelatedLink to="updates" text="Research updates" />
                         <RelatedLink to="twelve-lectures" text="Twelve lectures" />
                         <RelatedLink to="other-material" text="Global thoughts" />
+
+                        <Box mt="4" dangerouslySetInnerHTML={{ __html: html }} />
                     </TitledCard>
                 </Box>
             </CoverImageLayout>

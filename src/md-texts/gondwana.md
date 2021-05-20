@@ -6,11 +6,6 @@ animation_alt: "Gondwana"
 
 How did Gondwana break up exactly? 
 
-
-> [Principles of global tectonics](http://www.reeves.nl/upload/principles-of-global-large.pdf)
-
-
-
 The southern continents – more than half the
 world’s land area – share much geological and tectonic history.  The formation
 of Gondwana as a ‘supercontinent’ was completed at the start of Phanerozoic
