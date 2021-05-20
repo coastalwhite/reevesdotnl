@@ -1,6 +1,6 @@
 ---
 title: "Colin Reeves"
-image_path: "img/smallmugshot.jpg"
+image_path: "img/smallmugshot.png"
 image_alt: "Colin Reeves"
 readmore_uri: "/about"
 ---
