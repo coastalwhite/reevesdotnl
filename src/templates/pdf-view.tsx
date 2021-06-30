@@ -8,6 +8,7 @@ import TitledCard from "../components/cards/titled-card";
 import { LinkName } from "../components/menu";
 import Paragraph from "../components/paragraph";
 import { Helmet } from 'react-helmet';
+import { ListItem, OrderedList, UnorderedList } from "@chakra-ui/react";
 
 interface PDFViewLayoutProps {
     children?: React.ReactNode;
@@ -63,6 +64,11 @@ const Bold = (props) => <Text fontWeight="bold">{props.children}</Text>;
 const BlockQuote = (props) => <Box w="full" p="4" bg="bgcolor" color="#555" my="4">{props.children}</Box>;
 const Img = (props) => <Image mx="auto" src={props.src} alt={props.alt} maxW={["100%", "100%", "640px"]} />;
 
+const Ul = (props) => <UnorderedList mb={4}>{props.children}</UnorderedList>
+const Ol = (props) => <OrderedList mb={4}>{props.children}</OrderedList>
+
+const LiItem = (props) => <ListItem>{props.children}</ListItem>
+
 interface BannerData {
     allFile: {
         edges: {
@@ -109,6 +115,9 @@ const PDFViewLayout = (data: PDFViewLayoutProps) => {
         i: Italic,
         b: Bold,
         blockquote: BlockQuote,
+        ol: Ol,
+        ul: Ul,
+        li: LiItem,
     };
     return (
         <Base pageName={linked}>
