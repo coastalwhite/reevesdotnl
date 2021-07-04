@@ -54,7 +54,7 @@ const PublishDate = (date) => {
     };
 }
 
-const Header = (as: ElementType<any>, size: string) => (props) => <Heading as={as} size={size} mt="4">{props.children}</Heading>;
+const Header = (as: ElementType<any>, size: string) => (props) => <Heading as={as} size={size} mt="4" mb={2}>{props.children}</Heading>;
 
 const PDFLink = (props) => <GatsbyLink to={props.href}><Link color="refcolor">{props.children}</Link></GatsbyLink>;
 const Reference = (props) => <div><Text fontStyle="italic">{props.children} {props.link && <PDFLink href={props.link}>{props.link}</PDFLink>}</Text></div>
