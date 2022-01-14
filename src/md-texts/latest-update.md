@@ -1,8 +1,8 @@
 ---
-title: "Earthworks celebrates 20 years"
+title: "Three presentations in 2021"
 readmore_uri: "./news"
 ---
 
-We mark 20 years of Earthworks with the launch of our new website. We hope to
-keep you better informed of the latest Gondwana research with its text, graphics
-and animations. Do get in touch!!!
+Three presentations were given in 2021: (1) a poster on the southern South Atlantic at the Netherlands Earth Science Congress 
+in May, (2) a talk on the southern South Atlantic at the Geological Society in October and (3) A Krishnanunni Memorial Lecture
+(virtual) in India, also in October.  Poster, abstract and YouTube recording are all availbale via the News page. Do get in touch!!!
