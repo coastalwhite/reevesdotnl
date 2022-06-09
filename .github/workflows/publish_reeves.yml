@@ -5,30 +5,20 @@ jobs:
   build:
     name: Publish to reeves.nl
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v1
+      - uses: enriikke/gatsby-gh-pages-action@v2
         with:
-          node-version: '14'
-      
-      - name: Cache Dependencies
-        id: dependencies
-        uses: actions/cache@v3
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+          deploy-branch: reevesdotnl-files
+      - uses: actions/checkout@v1
         with:
-          path: node_modules
-          key: ${{ runner.os }}-dependencies
-          
-      - name: Generate Prime Numbers
-        if: steps.cache-dependencies.outputs.cache-hit != 'true'
-        run: npm install --force
-        
-      - run: npm run build
+          ref: reevesdotnl-files
 
-      - run: rm -f ./public/**/*.js.map
-      - run: rm -f ./public/**/*.mdx
-      - run: rm -f ./public/**/*.md
-      - run: rm -f ./public/**/*.tsx
+      - run: rm -f ./**/*.js.map
+      - run: rm -f ./**/*.mdx
+      - run: rm -f ./**/*.md
+      - run: rm -f ./**/*.tsx
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
@@ -36,5 +26,5 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: './public/'
+          local-dir: './'
           server-dir: 'public_html/'
