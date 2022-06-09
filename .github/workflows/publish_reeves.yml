@@ -21,7 +21,7 @@ jobs:
           
       - name: Generate Prime Numbers
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
-        run: npm install
+        run: npm install --force
         
       - run: npm run build
 
