@@ -8,11 +8,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: borales/actions-yarn@v3.0.0
         with:
-          node-version: '14'
-      - run: npm install
-      - run: npm run build
+          cmd: install
+      - uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: build
 
       - run: rm -f ./public/**/*.js.map
       - run: rm -f ./public/**/*.mdx
