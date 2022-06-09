@@ -8,12 +8,22 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: borales/actions-yarn@v3.0.0
+      - uses: actions/setup-node@v2
         with:
-          cmd: install
-      - uses: borales/actions-yarn@v3.0.0
+          node-version: '14'
+      
+      - name: Cache Dependencies
+        id: dependencies
+        uses: actions/cache@v3
         with:
-          cmd: build
+          path: node_modules
+          key: ${{ runner.os }}-dependencies
+          
+      - name: Generate Prime Numbers
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
+        run: npm install
+        
+      - run: npm run build
 
       - run: rm -f ./public/**/*.js.map
       - run: rm -f ./public/**/*.mdx
