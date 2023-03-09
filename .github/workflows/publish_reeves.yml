@@ -3,8 +3,6 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    env:
-        NODE_OPTIONS: '--openssl-legacy-provider'
     name: Publish to reeves.nl
     runs-on: ubuntu-latest
     steps:
