@@ -10,8 +10,6 @@ on:
 jobs:
   generate_demo_page:
     runs-on: ubuntu-latest
-    env:
-      - NODE_OPTIONS: --openssl-legacy-provider
     steps:
       - uses: actions/checkout@v1
       - uses: enriikke/gatsby-gh-pages-action@v2
@@ -19,3 +17,5 @@ jobs:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: gh-pages
           gatsby-args: --prefix-paths
+        env:
+          - NODE_OPTIONS: --openssl-legacy-provider
