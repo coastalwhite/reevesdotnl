@@ -3,6 +3,8 @@ on:
   workflow_dispatch:
 jobs:
   build:
+    env:
+        NODE_OPTIONS: '--openssl-legacy-provider'
     name: Publish to reeves.nl
     runs-on: ubuntu-latest
     steps:
@@ -11,8 +13,6 @@ jobs:
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: reevesdotnl-files
-        env:
-          - NODE_OPTIONS: --openssl-legacy-provider
       - uses: actions/checkout@v1
         with:
           ref: reevesdotnl-files

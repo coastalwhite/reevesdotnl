@@ -9,13 +9,14 @@ on:
 
 jobs:
   generate_demo_page:
+    env:
+        NODE_OPTIONS: '--openssl-legacy-provider'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - name: 
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: gh-pages
           gatsby-args: --prefix-paths
-        env:
-          - NODE_OPTIONS: --openssl-legacy-provider
