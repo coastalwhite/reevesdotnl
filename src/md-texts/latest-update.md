@@ -3,6 +3,6 @@ title: "Three presentations in 2021"
 readmore_uri: "./news"
 ---
 
-Three presentations were given in 2021: (1) a poster on the southern South Atlantic at the Netherlands Earth Science Congress 
-in May, (2) a talk on the southern South Atlantic at the Geological Society in October and (3) A Krishnanunni Memorial Lecture
-(virtual) in India, also in October.  Poster, abstract and YouTube recording are all availbale via the News page. Do get in touch!!!
+# Presentations in 2023
+
+Three years precisely after Covid-19 regulations put restrictions on public meetings, the fourth of four posters on our Gondwana work will be presented in the 2023 Netherlands Geoscience Congress in Utrecht on March 23. The title is The Bouvet triple junction: a model of fragmentation in Jurassic and Early Cretaceous times. After many years of effort, we unveil a satisfactory model that…
