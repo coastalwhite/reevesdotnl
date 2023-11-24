@@ -4,7 +4,7 @@ animation_path: "img/gondwana.gif"
 animation_alt: "Gondwana"
 ---
 
-How did Gondwana break up exactly? 
+**How did Gondwana break up exactly?** 
 
 The southern continents – more than half the
 world’s land area – share much geological and tectonic history.  The formation
