@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: "/reevesdotnl",
   siteMetadata: {
     title: "Reeves.nl",
-    siteUrl: "http://www.reeves.nl/",
+    siteUrl: "https://www.reeves.nl/",
     author: "Colin Reeves",
     keywords: [
       "Geophysics",
