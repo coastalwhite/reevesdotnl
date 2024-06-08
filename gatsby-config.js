@@ -26,6 +26,7 @@ module.exports = {
     ],
   },
   plugins: [
+    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-plugin-goatcounter`,
       options: {
