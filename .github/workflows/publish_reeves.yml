@@ -14,11 +14,17 @@ jobs:
       - uses: actions/checkout@v1
         with:
           ref: reevesdotnl-files
+            
+      - run: |
+          touch robots.txt
+          echo 'User-agent: *'                          >> robots.txt
+          echo 'Allow: /'                               >> robots.txt
+          echo 'Sitemap: https://reeves.nl/sitemap.xml' >> robots.txt
 
-      - run: rm -f ./**/*.js.map
-      - run: rm -f ./**/*.mdx
-      - run: rm -f ./**/*.md
-      - run: rm -f ./**/*.tsx
+      - run: find . -name "*.js.map" -type f -delete
+      - run: find . -name "*.mdx"    -type f -delete
+      - run: find . -name "*.md"     -type f -delete
+      - run: find . -name "*.tsx"    -type f -delete
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
