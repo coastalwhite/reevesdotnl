@@ -26,8 +26,6 @@ immense economic importance.  The links above lead to a large resource of
 information from the principles of global tectonics by way of graphic animations
 and published texts to the latest pre-publication research ideas.
 
-**[Read full Preface](./assets/Preface-2025.pdf)**
-
-*Last update: 2025 July 31*
+*Last update: 2025 August 1*
 
 
