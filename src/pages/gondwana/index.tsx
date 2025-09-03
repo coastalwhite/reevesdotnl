@@ -45,8 +45,7 @@ const GondwanaPage = () => {
                             text="Animations"
                         />
                         <RelatedLink to="updates" text="Research updates" />
-                        <RelatedLink to="twelve-lectures" text="Twelve lectures" />
-                        <RelatedLink to="other-material" text="Global thoughts" />
+                        <RelatedLink to="other-material" text="Appendices" />
 
                         <Box mt="4" dangerouslySetInnerHTML={{ __html: html }} />
                     </TitledCard>
