@@ -1,5 +1,5 @@
 ---
-title: "A plate tectonics primer"
+title: "300 million years of Earth history"
 animation_path: "img/gondwana.gif"
 animation_alt: "Gondwana"
 ---
@@ -26,6 +26,6 @@ immense economic importance.  The links above lead to a large resource of
 information from the principles of global tectonics by way of graphic animations
 and published texts to the latest pre-publication research ideas.
 
-*Last update: 2025 August 1*
+*Last update: 2025 September 3*
 
 
