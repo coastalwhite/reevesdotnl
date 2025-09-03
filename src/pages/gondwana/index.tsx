@@ -42,7 +42,7 @@ const GondwanaPage = () => {
                         />
                         <RelatedLink
                             to="animations"
-                            text="Selected animations"
+                            text="Animations"
                         />
                         <RelatedLink to="updates" text="Research updates" />
                         <RelatedLink to="twelve-lectures" text="Twelve lectures" />
