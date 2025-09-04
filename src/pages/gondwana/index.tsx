@@ -36,7 +36,7 @@ const GondwanaPage = () => {
                 <Box maxW="100vw">
                     <TitledCard title={fm.title}>
                         <RelatedLink
-                            to=".//assets/Preface-2025-large.pdf"
+                            to="http://www.reeves.nl/upload/Preface-2025-large.pdf"
                             text="Preface 2025"
                             absoluteUrl
                         />
