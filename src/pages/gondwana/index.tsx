@@ -37,7 +37,7 @@ const GondwanaPage = () => {
                     <TitledCard title={fm.title}>
                         <RelatedLink
                             to="http://www.reeves.nl/upload/principles-of-global-large.pdf"
-                            text="Principles of global tectonics"
+                            text="Preface 2025"
                             absoluteUrl
                         />
                         <RelatedLink
