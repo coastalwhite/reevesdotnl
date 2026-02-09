@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{h0Qw:function(e,t,n){"use strict";n.r(t);var a=n("Wbzz"),l=n("q1tI"),r=n("v7Hm");t.default=function(){var e=new Date(Object(a.d)("1007342096").site.buildTime).toLocaleString("en-GB",{timeZone:"CET"});return l.createElement(r.a,{m:"4"},l.createElement("b",null,"Last update at:"),l.createElement("br",null),l.createElement("i",null,e))}}}]);
+//# sourceMappingURL=component---src-pages-build-time-tsx-cb2cd7c11c7c4d95648e.js.map
