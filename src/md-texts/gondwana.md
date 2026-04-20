@@ -33,6 +33,18 @@ the reader with rapid introductions to some of the main conclusions.
 
 [The Agulhas plateau](NAC2026-corrected-CVR.pdf)
 
+[March 2025](./assets/NAC2025-CVR-small.pdf)
+
+[March 2024](http://www.reeves.nl/upload/NAC2024-CR-RS-EA-PC.pdf)
+
+[March 2023](http://www.reeves.nl/upload/NAC2023-CVR.pdf)
+
+[September 2022](http://www.reeves.nl/upload/NAC2022-CVR.pdf)
+
+[March 2021](http://www.reeves.nl/upload/NAC2021-CVR-final.pdf)
+
+[March 2020](http://www.reeves.nl/upload/Reeves-NACgeo2020-2pages.pdf)
+
 *Last update: 2026 April 20*
 
 
