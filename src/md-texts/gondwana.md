@@ -17,6 +17,7 @@ continental outlines were established and these fragments started moving apart
 to give the familiar geography of today with almost half of the world’s oceans
 now separating them. 
 
+
 The research presented here attempts to define, step by
 step, the history of Gondwana dispersal against the geological time-scale and in
 geometrical detail. While evidence of all sorts has been used, it is the careful
@@ -26,10 +27,12 @@ understanding. The continental margins formed in the process - and the rifts
 that have penetrated but not separated the present-day continents - are of
 immense economic importance.  
 
-The links above lead to a large resource of information from the principles of 
+
+The **links at the top of this page** lead to a large resource of information from the principles of 
 global tectonics by way of graphic animations and published texts to the latest 
-pre-publication research ideas. A series of posters presented since 2020 and accessible below may provide 
+pre-publication research ideas. A series of **posters** presented since 2020 and accessible below may provide 
 the reader with rapid introductions to some of the main conclusions.
+
 
 [The Agulhas plateau](NAC2026-corrected-CVR.pdf)
 
@@ -45,6 +48,6 @@ the reader with rapid introductions to some of the main conclusions.
 
 [March 2020](http://www.reeves.nl/upload/Reeves-NACgeo2020-2pages.pdf)
 
-*Last update: 2026 April 20*
+*Last update: 2026 April 20 - 16:00*
 
 
