@@ -42,7 +42,7 @@ the reader with rapid introductions to some of the main conclusions.
 
 [The Agulhas plateau](https://github.com/coastalwhite/reevesdotnl/blob/main/src/pages/gondwana/assets/NAC2026-corrected-CVR.pdf)
 
-[March 2025](./assets/NAC2025-CVR-small.pdf)
+[March 2025](https://github.com/coastalwhite/reevesdotnl/blob/main/src/pages/gondwana/assets/NAC2025-CVR-small.pdf)
 
 [March 2024](http://www.reeves.nl/upload/NAC2024-CR-RS-EA-PC.pdf)
 
