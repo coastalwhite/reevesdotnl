@@ -40,7 +40,7 @@ A series of **posters** presented since 2020 are accessible below and may provid
 the reader with rapid introductions to some of the main conclusions.
 
 
-[The Agulhas plateau]([NAC2026-corrected-CVR.pdf](https://github.com/coastalwhite/reevesdotnl/blob/main/src/pages/gondwana/assets/NAC2026-corrected-CVR.pdf))
+[The Agulhas plateau]([NAC2026-corrected-CVR.pdf](https://github.com/coastalwhite/reevesdotnl/blob/main/src/pages/gondwana/assets/NAC2026-corrected-CVR.pdf)
 
 [March 2025](./assets/NAC2025-CVR-small.pdf)
 
