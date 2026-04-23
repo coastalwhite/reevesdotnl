@@ -54,7 +54,7 @@ the reader with rapid introductions to some of the main conclusions.
 
 [Bouvet mantle plume *- March 2020*](http://www.reeves.nl/upload/Reeves-NACgeo2020-2pages.pdf)
 
-
+-
 
 *Last update: 2026 April 23 - 10:30*
 
