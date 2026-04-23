@@ -15,7 +15,7 @@ starting to fragment in the Jurassic period, about 184 Ma. During Early
 Cretaceous times, especially in the interval 140-120 Ma, most of the present
 continental outlines were established and these fragments started moving apart
 to give the familiar geography of today with almost half of the world’s oceans
-now separating them. 
+now separating them. Understanding this process is essential to awareness of the consequent stratigraphy of the margins of the southern continents and paleo-climatology during Jurassic, Cretaceous and younger times.
 
 
 
@@ -28,9 +28,9 @@ understanding. The continental margins formed in the process - and the rifts
 that have penetrated but not separated the present-day continents - are of
 immense economic importance. 
 
-**Animations**
+[**Animations**](https://www.reeves.nl/gondwana/animations)
 
-The **links at the top of this page** lead to a large resource of information from the principles of 
+The links at the top of this page lead to a large resource of information from the principles of 
 global tectonics by way of graphic **animations** and published texts to the latest 
 pre-publication research ideas. 
 
@@ -44,18 +44,18 @@ the reader with rapid introductions to some of the main conclusions.
 
 [March 2025](https://github.com/coastalwhite/reevesdotnl/blob/main/src/pages/gondwana/assets/NAC2025-CVR-small.pdf)
 
-[March 2024](http://www.reeves.nl/upload/NAC2024-CR-RS-EA-PC.pdf)
+[Geodynamics *- March 2024*](http://www.reeves.nl/upload/NAC2024-CR-RS-EA-PC.pdf)
 
-[March 2023](http://www.reeves.nl/upload/NAC2023-CVR.pdf)
+[The Bouvet triple junction *- April 2023*](http://www.reeves.nl/upload/NAC2023-CVR.pdf)
 
-[September 2022](http://www.reeves.nl/upload/NAC2022-CVR.pdf)
+[Gondwana dispersal *- September 2022*](http://www.reeves.nl/upload/NAC2022-CVR.pdf)
 
-[March 2021](http://www.reeves.nl/upload/NAC2021-CVR-final.pdf)
+[South Atlantic Ocean *- March 2021*](http://www.reeves.nl/upload/NAC2021-CVR-final.pdf)
 
-[March 2020](http://www.reeves.nl/upload/Reeves-NACgeo2020-2pages.pdf)
+[Bouvet mantle plume *- March 2020*](http://www.reeves.nl/upload/Reeves-NACgeo2020-2pages.pdf)
 
 
 
-*Last update: 2026 April 22 - 16:15*
+*Last update: 2026 April 23 - 10:30*
 
 
