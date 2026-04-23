@@ -15,8 +15,7 @@ starting to fragment in the Jurassic period, about 184 Ma. During Early
 Cretaceous times, especially in the interval 140-120 Ma, most of the present
 continental outlines were established and these fragments started moving apart
 to give the familiar geography of today with almost half of the world’s oceans
-now separating them. Understanding this process is essential to awareness of the consequent stratigraphy of the margins of the southern continents and paleo-climatology during Jurassic, Cretaceous and younger times.
-
+now separating them. Understanding this process is essential to awareness of the consequent stratigraphy of the margins of the southern continents and paleo-climatology during Mesozoic and Cenozoic times.
 
 
 The research presented here attempts to define, step by
@@ -28,21 +27,23 @@ understanding. The continental margins formed in the process - and the rifts
 that have penetrated but not separated the present-day continents - are of
 immense economic importance. 
 
+---
+
 [**Animations**](https://www.reeves.nl/gondwana/animations)
 
-The links at the top of this page lead to a large resource of information from the principles of 
-global tectonics by way of graphic **animations** and published texts to the latest 
-pre-publication research ideas. 
+The links at the top of this page lead to a large resource of information. The principles of 
+global tectonics and the results of the present work are displayed  by way of graphic **animations** and listes of published texts and the latest roation poles used by the model.  Much of this work is as yet unpublished. 
+
+---
 
 **Posters**
 
-A series of **posters** presented since 2020 are accessible below and may provide 
-the reader with rapid introductions to some of the main conclusions.
+A series of **posters** presented at the annual  Netherlands Earth Science Congress since 2020 are accessible below and may provide the reader with rapid introductions to some of the main conclusions.
 
 
-[The Agulhas plateau](https://github.com/coastalwhite/reevesdotnl/blob/main/src/pages/gondwana/assets/NAC2026-corrected-CVR.pdf)
+[The Agulhas plateau *- April 2026*](https://github.com/coastalwhite/reevesdotnl/blob/main/src/pages/gondwana/assets/NAC2026-corrected-CVR.pdf)
 
-[March 2025](https://github.com/coastalwhite/reevesdotnl/blob/main/src/pages/gondwana/assets/NAC2025-CVR-small.pdf)
+[The Southwest Indian Ridege *- March 2025*](https://github.com/coastalwhite/reevesdotnl/blob/main/src/pages/gondwana/assets/NAC2025-CVR-small.pdf)
 
 [Geodynamics *- March 2024*](http://www.reeves.nl/upload/NAC2024-CR-RS-EA-PC.pdf)
 
@@ -55,7 +56,9 @@ the reader with rapid introductions to some of the main conclusions.
 [Bouvet mantle plume *- March 2020*](http://www.reeves.nl/upload/Reeves-NACgeo2020-2pages.pdf)
 
 -
+The intention now is to turn attention to describing the results rather than further fine-tuning the model which, after many iterations, appears to be robust and ready for independent assessment. Feedback is, as always, very welcome.
 
+-
 *Last update: 2026 April 23 - 10:30*
 
 
