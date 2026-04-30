@@ -17,7 +17,7 @@ continental outlines were established and these fragments started moving apart
 to give the familiar geography of today with almost half of the world’s oceans
 now separating them. Understanding this process is essential to awareness of the consequent stratigraphy of the margins of the southern continents and paleo-climatology during Mesozoic and Cenozoic times.
 
-
+eee
 
 The research presented here attempts to define, step by
 step, the history of Gondwana dispersal against the geological time-scale and in
@@ -28,14 +28,14 @@ understanding. The continental margins formed in the process - and the rifts
 that have penetrated but not separated the present-day continents - are of
 immense economic importance. 
 
-
+eee
 
 Solutions for the development of the South Atlantic and Indian oceans, particularly through the Cretaceous Quiet Zone (121 - 83 Ma), proved to be relatively straightforward.  A defensible model for the tectonic history around the Bouvet triple junction between these two oceans proved much more elusive. I now have a defensible model, including a constraining 'South America-Antarctica corridor'. The intention now is to turn my attention to describing the results rather than further fine-tuning of the model.  After many iterations, the model appears to be robust and ready for independent assessment. Feedback is, as always, very welcome.
 
-
+eee
 
 The links at the top of this page lead to a large resource of information: **Animations, posters, research updates, Euler rotation poles**, etc.  Much of this work is as yet unpublished. 
 
-*Last update: 2026 April 30 - 12:35*
+*Last update: 2026 April 30 - 14:45*
 
 
