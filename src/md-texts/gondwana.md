@@ -36,6 +36,6 @@ Solutions for the development of the South Atlantic and Indian oceans, particula
 
 The links at the top of this page lead to a large resource of information: **Animations, posters, research updates, Euler rotation poles**, etc.  Much of this work is as yet unpublished. 
 
-*Last update: 2026 April 30 - 12:05*
+*Last update: 2026 April 30 - 12:35*
 
 
