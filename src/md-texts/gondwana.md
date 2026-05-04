@@ -16,6 +16,7 @@ oceans now separating them. Understanding this process is essential to awareness
 stratigraphy of the margins of the southern continents and paleo-climatology during Mesozoic and Cenozoic 
 times.  
 
+
 The research presented here attempts to define, step by step, the history of Gondwana dispersal against the geological time-scale and in geometrical detail. While evidence of all sorts has been used, it is the careful interpretation of the topography of the sea floor, revealed in detail by satellite gravimetry only since about 
 1997, that has been key to this new understanding. The continental margins formed in the process - and the 
 rifts that have penetrated but not separated the present-day continents - are of immense economic importance.   
@@ -29,8 +30,8 @@ describing the results rather than further fine-tuning of the model.  After many
 be robust and ready for independent assessment. Feedback is, as always, very welcome.  
 
 
-The links at the top of this page lead to a large resource of information: **Animations, posters, research updates, Euler rotation poles**, etc.  Much of this work is as yet unpublished.  
+The links at the top of this page lead to a large resource of information: **Preface 2025** is an introduction to the project as a whole; a series of over 20 **Animations** illustrate the principles of plate modelling and the main results of my work; **Research Updates** include a series of explanatory posters and explanatory texts; **Appendices** list Euler rotation poles and other supplementary information.  Much of this work is as yet unpublished.  
 
-*Last update: 2026 April 30 - 16:10*
+*Last update: 2026 May 4 - 10:45*
 
 
