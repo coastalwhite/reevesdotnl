@@ -15,7 +15,7 @@ lectured widely on regional geophysical exploration, was Association
 Lecturer for IAGA in 2009, AAPG Distinguished Lecturer in Europe in 2011 and
 winner of the Best Paper award at the PESGB ‘Africa’ meeting in London in
 2015\. His publications include ‘Aeromagnetic surveys: principles, practice
-and interpretation’. Since 2017 he has been a member of the Geological
+and interpretation’. From 2017 to 2024 he was a member of the Geological
 Society’s Stratigraphy Commission. In his retirement he endeavours to share
 his unique insights and experience to realise their scientific value to
 studies of Gondwana and its dispersal.
