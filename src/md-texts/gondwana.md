@@ -8,7 +8,7 @@ animation_alt: "Gondwana"
 
 :::
 
-**Preface** (above) describes the scope of a reseach project that has extended over more then 20 years to satify my curiosity about Gondwana dispersal. A series of more than 20 **Animations** illustrates the results, starting from the principles of plate tectonics and the basic datasets used and continuing into the detailed results from key areas of the study.  **Research Updates** leads to a summary of the results and some generalisations about the working of plate tectonics in Gondwana.  For the specialist, **Appendices** present the Euler rotation poles and other supplementary information to enable implementation of the model in plate-modelling software. Parts of the work already in the published literature may be traced under the **Publications** tab on the homepage. I welcome enquires from those who seek to take this work further.
+**Preface** (above) describes the scope of a reseach project that has extended over more then 20 years to satisfy my curiosity about Gondwana dispersal. A series of more than 20 **Animations** illustrates the results, starting from the principles of plate tectonics and the basic datasets used and continuing into the detailed results from key areas of the study.  **Research Updates** leads to a summary of the results and some generalisations about the working of plate tectonics in Gondwana.  For the specialist, **Appendices** present the Euler rotation poles and other supplementary information to enable implementation of the model in plate-modelling software. Parts of the work already in the published literature may be traced under the **Publications** tab on the homepage. I welcome enquires from those who seek to take this work further.
 
 :::
 
@@ -29,7 +29,9 @@ The research presented here attempts to define, step by step, the history of Gon
 
 :::
 
-Solutions for the development of the South Atlantic and Indian oceans, particularly through the Cretaceous Quiet Zone (121 - 83 Ma), proved to be relatively straightforward.  A credible model for the tectonic history around the Bouvet triple junction between these two oceans proved much more elusive. I now have a defensible model, including a constraining 'South America-Antarctica Corridor'.  After many iterations, the model appears to be robust and ready for independent assessment. Feedback is, of course, very welcome. The animations alone may prove to be a stimulating introduction for those setting out to study earth sciences or natural history more broadly.   
+Solutions for the development of the South Atlantic and Indian oceans, particularly through the Cretaceous Quiet Zone (121 - 83 Ma), proved to be relatively straightforward.  A credible model for the tectonic history around the Bouvet triple junction between these two oceans proved much more elusive. I now have a defensible model, including a constraining 'South America-Antarctica Corridor'.  After many iterations, the model appears to be robust and ready for independent assessment. Feedback is, of course, very welcome. The animations alone may prove to be a stimulating introduction for those setting out to study earth sciences or natural history more broadly.  
+
+:::
 
 **Colin Reeves**
 
