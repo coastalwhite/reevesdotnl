@@ -6,9 +6,15 @@ animation_alt: "Gondwana"
 
 **How to make best use of this website**
 
+:::
+
 **Preface** (above) describes the scope of a reseach project that has extended over more then 20 years to satify my curiosity about Gondwana dispersal. A series of more than 20 **Animations** illustrates the results, starting from the principles of plate tectonics and the basic datasets used and continuing into the detailed results from key areas of the study.  **Research Updates** leads to a summary of the results and some generalisations about the working of plate tectonics in Gondwana.  For the specialist, **Appendices** present the Euler rotation poles and other supplementary information to enable implementation of the model in plate-modelling software. Parts of the work already in the published literature may be traced under the **Publications** tab on the homepage. I welcome enquires from those who seek to take this work further.
 
+:::
+
 **How did Gondwana break up exactly?** 
+
+:::
 
 The southern continents – more than half the world’s land area – share much geological and tectonic history. The formation of Gondwana as a ‘supercontinent’ was completed at the start of Phanerozoic times, about 540 million years ago (540 Ma). It remained intact as a single large landmass for two-thirds of the time between 
 then and now, eventually starting to fragment in the Jurassic period, about 184 Ma.
